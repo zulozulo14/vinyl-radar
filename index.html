@@ -154,6 +154,7 @@ function searchUrl(kind,d){
     : "https://www.marktplaats.nl/q/"+q+"/";
 }
 function total(d){ return Math.round((d.askPrice + (d.shipEst||0))*100)/100; }
+function absUrl(u){ return /^https?:\/\//.test(u) ? u : 'https://'+u.replace(/^\/+/,''); }
 function effPrice(d){ return d.askPrice!=null ? total(d) : d.pLo; }
 function statusOf(id){return store[id]||"none"}
 function setStatus(id,s){ if(store[id]===s) delete store[id]; else store[id]=s; saveStore(); render(); }
@@ -212,7 +213,7 @@ function card(d){
     ${(d.source||d.seller||d.cond||d.numForSale)?'<div class="meta">'+[d.source?'<span>📦 '+d.source+'</span>':'',d.numForSale?'<span>'+d.numForSale+' te koop</span>':'',d.cond?'<span>'+d.cond+'</span>':'',d.seller?'<span>'+d.seller+'</span>':''].filter(Boolean).join('')+'</div>':""}
     ${crates?'<div class="crates">'+crates+'</div>':""}
     <div class="actions">
-      ${d.url?'<a class="btn dg" href="'+d.url+'" target="_blank" rel="noopener">Listing ↗</a>':""}
+      ${d.url?'<a class="btn dg" href="'+absUrl(d.url)+'" target="_blank" rel="noopener">Listing ↗</a>':""}
       <a class="btn dg" href="${searchUrl("dg",d)}" target="_blank" rel="noopener">Discogs ↗</a>
       <a class="btn" href="${searchUrl("mp",d)}" target="_blank" rel="noopener">Marktplaats ↗</a>
     </div>

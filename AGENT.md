@@ -59,7 +59,7 @@ API — laat `median` weg tenzij je 'm elders hebt. Toon dus "laagste actuele vr
   // alleen B: sublane:"stoner/doom/post-metal/…"
   wildcard:false, pick:false,
   // koopje-context uit de Discogs API:
-  source:"Discogs|Marktplaats", url:"discogs.com/sell/release/{id} of Marktplaats-link",
+  source:"Discogs|Marktplaats", url:"VOLLEDIGE https-URL, bijv. https://www.discogs.com/sell/release/{id}?sort=price&sort_order=asc — NOOIT zonder https:// (anders dode link)",
   askPrice:0,            // = lowest_price uit de API (kale itemprijs, of Marktplaats-vraagprijs)
   shipEst:0,             // geschatte verzending naar NL (0 bij Marktplaats-ophalen). Totaal = askPrice+shipEst
   median:0,              // optioneel; weglaten mag

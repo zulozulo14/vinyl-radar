@@ -173,7 +173,7 @@ window.VINYL_DATA = [
     pLo:4, pHi:15, wildcard:false, pick:false,
     element:"jazz-funk Rhodes + exotische wereldsfeer",
     desc:"Vergeten MPS-plaat van Duke vol groove en Afro-Braziliaanse invloeden.",
-    source:"Discogs", url:"discogs.com/sell/release/1159940?sort=price&sort_order=asc",
+    source:"Discogs", url:"https://www.discogs.com/sell/release/1159940?sort=price&sort_order=asc",
     askPrice:4.72, shipEst:8, numForSale:36, cond:"", seller:"", found:"2026-08-30" },
 
   { id:"r-20260830-2", cat:"A", artist:"Altın Gün", title:"Yol", year:2021, country:"Europe",
@@ -181,7 +181,7 @@ window.VINYL_DATA = [
     pLo:22, pHi:32, wildcard:false, pick:false,
     element:"Turkse folk-funk, psychedelische gitaar + ritme",
     desc:"Opvolger van 'On': net zo hypnotisch, nog rauwer en vrijer.",
-    source:"Discogs", url:"discogs.com/sell/release/17562928?sort=price&sort_order=asc",
+    source:"Discogs", url:"https://www.discogs.com/sell/release/17562928?sort=price&sort_order=asc",
     askPrice:23.56, shipEst:8, numForSale:75, cond:"", seller:"", found:"2026-08-30" },
 
   { id:"r-20260830-3", cat:"A", artist:"Bixiga 70", title:"III", year:2015, country:"Germany",
@@ -189,7 +189,7 @@ window.VINYL_DATA = [
     pLo:22, pHi:32, wildcard:true, pick:false,
     element:"Braziliaans Afro-funk, rauwe percussie + wereldritme",
     desc:"São Paulo-collectief op Glitterbeat: motorisch Afrobeat met Latijns vuur.",
-    source:"Discogs", url:"discogs.com/sell/release/7131390?sort=price&sort_order=asc",
+    source:"Discogs", url:"https://www.discogs.com/sell/release/7131390?sort=price&sort_order=asc",
     askPrice:23.84, shipEst:8, numForSale:23, cond:"", seller:"", found:"2026-08-30" },
 
   { id:"r-20260830-4", cat:"B", artist:"Graveyard", title:"Lights Out", year:2012, country:"Germany",
@@ -197,7 +197,7 @@ window.VINYL_DATA = [
     sublane:"heavy-blues", pLo:18, pHi:30, wildcard:false, pick:false,
     element:"Retro heavy-blues met donkere riff + groove",
     desc:"Strakker en donkerder dan Hisingen Blues; zweedse motor op volle toeren.",
-    source:"Discogs", url:"discogs.com/sell/release/3977717?sort=price&sort_order=asc",
+    source:"Discogs", url:"https://www.discogs.com/sell/release/3977717?sort=price&sort_order=asc",
     askPrice:20.50, shipEst:8, numForSale:26, cond:"", seller:"", found:"2026-08-30" },
 
   { id:"r-20260830-5", cat:"B", artist:"Alice Coltrane", title:"Journey in Satchidananda", year:1971, country:"Worldwide",
@@ -205,7 +205,7 @@ window.VINYL_DATA = [
     sublane:"spiritual jazz", pLo:25, pHi:38, wildcard:false, pick:false,
     element:"Hypnotische spirituele jazz, harp + tambura + Pharoah Sanders",
     desc:"Meditatieve, kosmische diepte — perfecte tegenhanger van het zwaardere B-materiaal.",
-    source:"Discogs", url:"discogs.com/sell/release/26604263?sort=price&sort_order=asc",
+    source:"Discogs", url:"https://www.discogs.com/sell/release/26604263?sort=price&sort_order=asc",
     askPrice:26.65, shipEst:8, numForSale:66, cond:"", seller:"", found:"2026-08-30" },
 
   { id:"r-20260830-6", cat:"C", artist:"B.T. Express", title:"Energy to Burn", year:1976, country:"UK",
@@ -213,13 +213,13 @@ window.VINYL_DATA = [
     pLo:2, pHi:12, wildcard:false, pick:false,
     element:"Rollige 70s R&B-funk, dik bas + dancefloor-drive",
     desc:"UK-persing op <€3: pure dancefloor-engine, standaard in de goedkope bak.",
-    source:"Discogs", url:"discogs.com/sell/release/453415?sort=price&sort_order=asc",
+    source:"Discogs", url:"https://www.discogs.com/sell/release/453415?sort=price&sort_order=asc",
     askPrice:2.94, shipEst:12, numForSale:25, cond:"", seller:"", found:"2026-08-30" },
 
   { id:"r-20260830-7", cat:"C", artist:"Harari", title:"Harari", year:1981, country:"Netherlands",
     tracks:["Soul Fire","Get Funky","Liven Up"], pLo:18, pHi:28, wildcard:true, pick:false,
     element:"Zuid-Afrikaanse township-funk + Afrobeat-ritme",
     desc:"SA-band (ex-Beaters) op A&M NL: ophalen in NL voor ~€26, onbekend goud.",
-    source:"Discogs", url:"discogs.com/sell/release/3938940?sort=price&sort_order=asc",
+    source:"Discogs", url:"https://www.discogs.com/sell/release/3938940?sort=price&sort_order=asc",
     askPrice:22.03, shipEst:4, numForSale:7, cond:"", seller:"", found:"2026-08-30" }
 ];
