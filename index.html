@@ -172,6 +172,9 @@ function searchUrl(kind,d){
     ? "https://www.discogs.com/search/?q="+q+"&type=release&format_exact=Vinyl"
     : "https://www.marktplaats.nl/q/"+q+"/";
 }
+function sellerSearch(user,d){
+  return "https://www.discogs.com/seller/"+user+"/profile?q="+encodeURIComponent(d.artist+" "+d.title);
+}
 function total(d){ return Math.round((d.askPrice + (d.shipEst||0))*100)/100; }
 function absUrl(u){ return /^https?:\/\//.test(u) ? u : 'https://'+u.replace(/^\/+/,''); }
 function effPrice(d){ return d.askPrice!=null ? total(d) : d.pLo; }
@@ -236,6 +239,7 @@ function card(d){
       <a class="btn dg" href="${searchUrl("dg",d)}" target="_blank" rel="noopener">Discogs ↗</a>
       <a class="btn" href="${searchUrl("mp",d)}" target="_blank" rel="noopener">Marktplaats ↗</a>
     </div>
+    ${d.found?'<div class="actions"><span style="align-self:center;font-size:11px;color:var(--muted)">🛒 zoek bij:</span><a class="btn" href="'+sellerSearch("demonfuzz-records",d)+'" target="_blank" rel="noopener">demonfuzz</a><a class="btn" href="'+sellerSearch("KillaCutz",d)+'" target="_blank" rel="noopener">KillaCutz</a></div>':""}
     <div class="statusrow">
       <button class="sbtn wish${st==="wish"?" act":""}" data-s="wish">${st==="wish"?"♥ Wishlist":"♡ Wishlist"}</button>
       <button class="sbtn own${st==="own"?" act":""}" data-s="own">${st==="own"?"✓ Gehad":"Gehad"}</button>
