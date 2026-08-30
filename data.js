@@ -221,5 +221,52 @@ window.VINYL_DATA = [
     element:"Zuid-Afrikaanse township-funk + Afrobeat-ritme",
     desc:"SA-band (ex-Beaters) op A&M NL: ophalen in NL voor ~€26, onbekend goud.",
     source:"Discogs", url:"https://www.discogs.com/sell/release/3938940?sort=price&sort_order=asc",
-    askPrice:22.03, shipEst:4, numForSale:7, cond:"", seller:"", found:"2026-08-30" }
+    askPrice:22.03, shipEst:4, numForSale:7, cond:"", seller:"", found:"2026-08-30" },
+
+  // ---------- Run 2026-08-30 (2e ronde) — nieuwe vondsten ----------
+  { id:"r-20260830-8", cat:"A", artist:"Bobbi Humphrey", title:"Fancy Dancer", year:2021, country:"Worldwide",
+    tracks:["Uno Esta","The Trip","You Make Me Feel So Good","Fancy Dancer"], crate:[5,1], energy:3,
+    pLo:10, pHi:20, wildcard:false, pick:false,
+    element:"Mizell jazz-funk, fluit + Rhodes + Latijns-kosmische groove",
+    desc:"Opvolger van Blacks and Blues: zacht, zonnig en net zo hypnotisch — 2021 reissue.",
+    source:"Discogs", url:"https://www.discogs.com/sell/release/21040264?sort=price&sort_order=asc",
+    askPrice:12.90, shipEst:8, numForSale:84, cond:"", seller:"", sellerUrl:"", found:"2026-08-30" },
+
+  { id:"r-20260830-9", cat:"C", artist:"Ohio Players", title:"Fire", year:1974, country:"Germany",
+    tracks:["Fire","Together","Smoke","It's All Over"], pLo:3, pHi:10, wildcard:false, pick:false,
+    element:"rollende dancefloor-funk, diepe bas + tight groove",
+    desc:"Goedkoopste bak-goud: de German press van hun beste album voor €4 — voor de DJ-piek.",
+    source:"Discogs", url:"https://www.discogs.com/sell/release/1186239?sort=price&sort_order=asc",
+    askPrice:4.45, shipEst:8, numForSale:12, cond:"", seller:"", sellerUrl:"", found:"2026-08-30" },
+
+  { id:"r-20260830-10", cat:"B", artist:"Mastodon", title:"Crack the Skye", year:2009, country:"Europe",
+    tracks:["Oblivion","Quintessence","The Czar","The Last Baron"], sublane:"prog-sludge", pLo:18, pHi:30,
+    wildcard:false, pick:false,
+    element:"psychedelisch prog-sludge-epos, epische bogen + ruimte + dynamiek",
+    desc:"Na Leviathan: zwaarder en kosmischer — Mastodon op hun conceptuele hoogtepunt.",
+    source:"Discogs", url:"https://www.discogs.com/sell/release/2077429?sort=price&sort_order=asc",
+    askPrice:20.93, shipEst:8, numForSale:28, cond:"", seller:"", sellerUrl:"", found:"2026-08-30" },
+
+  { id:"r-20260830-11", cat:"A", artist:"Cymande", title:"Promised Heights", year:2024, country:"UK & Europe",
+    tracks:["Pon De Dungle","Brothers On The Slide","Breezeman","Promised Heights"], crate:[4,5], energy:3,
+    pLo:20, pHi:30, wildcard:false, pick:false,
+    element:"Afro-funk met dubby ruimte + warme groove",
+    desc:"Mindere bekende opvolger van het debuut, net zo groovy — 2024 EU-persing, 56 ex.",
+    source:"Discogs", url:"https://www.discogs.com/sell/release/30694411?sort=price&sort_order=asc",
+    askPrice:23.18, shipEst:8, numForSale:56, cond:"", seller:"", sellerUrl:"", found:"2026-08-30" },
+
+  { id:"r-20260830-12", cat:"A", artist:"Donald Byrd", title:"Street Lady", year:2023, country:"Europe",
+    tracks:["Lansana's Priestess","Miss Kane","Street Lady","Woman Of The World"], crate:[5,1], energy:3,
+    pLo:20, pHi:35, wildcard:false, pick:false,
+    element:"Mizell-jazz-funk, zwevende Rhodes + kosmische warmte",
+    desc:"Donkere, kosmische tegenhanger van Places and Spaces — 180g EU-reissue, 76 ex.",
+    source:"Discogs", url:"https://www.discogs.com/sell/release/26604617?sort=price&sort_order=asc",
+    askPrice:23.24, shipEst:8, numForSale:76, cond:"", seller:"", sellerUrl:"", found:"2026-08-30" },
+
+  { id:"r-20260830-13", cat:"C", artist:"Ronnie Foster", title:"Two Headed Freap", year:2022, country:"Worldwide",
+    tracks:["Mystic Brew","The Two Headed Freap","Chunky","Summer Song"], pLo:18, pHi:28, wildcard:true, pick:false,
+    element:"Blue Note jazz-funk, organ + Rhodes — 'Mystic Brew' gesampeld door ATCQ",
+    desc:"Meest vergeten Mizell-plaat: dromerig, funky, €22 voor de 2022 reissue. 'Wat ís dit?'",
+    source:"Discogs", url:"https://www.discogs.com/sell/release/23296742?sort=price&sort_order=asc",
+    askPrice:22.09, shipEst:8, numForSale:64, cond:"", seller:"", sellerUrl:"", found:"2026-08-30" }
 ];
