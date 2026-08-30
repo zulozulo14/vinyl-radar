@@ -14,13 +14,17 @@ toevoegen aan `data.js` zodat ze in de webinterface (`index.html`) verschijnen.
    **`num_for_sale`** op te halen — zie `## Discogs API` hieronder.
 5. Reken **inclusief geschatte verzendkosten naar NL**. Het budget geldt op het **TOTAAL**
    (item + verzending): prioriteit **≤€20 totaal**, plafond **≤€35 totaal**.
-   - Geef **NL/EU-verkopers voorrang** (lage verzending). Waar mogelijk: open de sell-pagina
-     `discogs.com/sell/release/{id}?sort=price&sort_order=asc` (netwerk is open) en lees de
-     échte verzendprijs van de goedkoopste geschikte listing.
-   - Lukt dat niet, schat verzending naar NL: **NL ~€4 · EU ~€7 · UK ~€10 · VS/overig ~€14**.
-   - Zet de schatting in `shipEst`. `askPrice` blijft de kale itemprijs; totaal = askPrice + shipEst.
-   Houd alleen platen met `num_for_sale > 0` en **totaal binnen budget**. Marktplaats (NL,
-   vaak ophalen = €0 verzending) is juist extra goed — `shipEst:0` bij ophalen.
+   - **BELANGRIJK — geef sterk voorrang aan NL/EU-verkopers.** Verzending vanuit de VS is
+     **€25–35 voor één LP** (dubbel-LP meer) + soms invoer-BTW → **US-only koopjes bijna altijd
+     overslaan**, hoe goedkoop het item ook is. `lowest_price` uit de API is vaak een US-verkoper;
+     kijk dus verder dan die.
+   - Kies **de goedkoopste kopie die vanuit NL/EU verstuurt**. Open waar mogelijk de sell-pagina
+     `discogs.com/sell/release/{id}?sort=price&sort_order=asc` (netwerk is open), filter op
+     Europese verkopers, en lees de échte verzendprijs. Zet díe kopie als `askPrice`/`url`.
+   - Kun je 't niet lezen, schat verzending naar NL: **NL ~€4 · EU ~€8 · UK ~€12 · VS/overig ~€30**
+     (losse LP; 2xLP hoger). Zet in `shipEst`. `askPrice` = kale itemprijs; totaal = askPrice + shipEst.
+   - **Marktplaats (NL) is juist top** — vaak ophalen = €0 verzending (`shipEst:0`) en geen douane.
+   Houd alleen platen met `num_for_sale > 0` en **totaal binnen budget**.
 6. Selecteer **max ~6–10 nieuwe vondsten per run**, verdeeld over A/B/C, ~70% logisch /
    30% wildcard. Kwaliteit boven kwantiteit. Niets onder de lat? Voeg niets toe (prima).
 7. Voeg elke vondst toe aan de array in `data.js` in exact het formaat hieronder.
