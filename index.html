@@ -106,6 +106,7 @@
     </select>
     <label class="price">≤ €<span id="pmaxv">40</span>
       <input type="range" id="pmax" min="5" max="40" value="40" step="1"></label>
+    <label class="toggle"><input type="checkbox" id="live"> alleen live vondsten 📦</label>
     <label class="toggle"><input type="checkbox" id="wild"> alleen 🃏 wildcards</label>
     <label class="toggle"><input type="checkbox" id="hideown" checked> verberg 'gehad'</label>
   </div>
@@ -125,7 +126,7 @@ const data=(window.VINYL_DATA||[]).map(d=>({...d}));
 const store=JSON.parse(localStorage.getItem("vinylRadarStatus")||"{}");
 const saveStore=()=>localStorage.setItem("vinylRadarStatus",JSON.stringify(store));
 
-const state={cat:"all",q:"",crate:"",sort:"cat",pmax:40,wild:false,hideown:true};
+const state={cat:"all",q:"",crate:"",sort:"cat",pmax:40,wild:false,live:false,hideown:true};
 
 // tabs
 const tabsEl=document.getElementById("tabs");
@@ -141,6 +142,7 @@ document.getElementById("q").oninput=e=>{state.q=e.target.value.toLowerCase();re
 document.getElementById("crate").onchange=e=>{state.crate=e.target.value;render()};
 document.getElementById("sort").onchange=e=>{state.sort=e.target.value;render()};
 document.getElementById("wild").onchange=e=>{state.wild=e.target.checked;render()};
+document.getElementById("live").onchange=e=>{state.live=e.target.checked;render()};
 document.getElementById("hideown").onchange=e=>{state.hideown=e.target.checked;render()};
 document.getElementById("pmax").oninput=e=>{state.pmax=+e.target.value;
   document.getElementById("pmaxv").textContent=state.pmax>=40?"40+":state.pmax;render()};
@@ -162,6 +164,7 @@ function match(d){
   else if(state.cat!=="all" && d.cat!==state.cat) return false;
   if(state.hideown && st==="own" && state.cat!=="wish") return false;
   if(state.wild && !d.wildcard) return false;
+  if(state.live && !d.found) return false;
   if(state.crate){ if(d.cat!=="A" || !(d.crate||[]).includes(+state.crate)) return false; }
   if(state.pmax<40 && effPrice(d)>state.pmax) return false;
   if(state.q){
