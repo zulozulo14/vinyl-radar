@@ -165,5 +165,17 @@ window.VINYL_DATA = [
     element:"Cosmic jazz-funk + spacey synths + weirdness", desc:"Weirdness met een groove eronder." },
   { id:"c15", cat:"C", artist:"Goat", title:"World Music", year:2012, country:"Zweden", wildcard:true,
     tracks:["Diarabi","Run to Your Mama","Let It Bleed"], pLo:20, pHi:25,
-    element:"Ritueel Afro-psych + fuzz + percussie", desc:"Modern maar rauw/vuil — géén nette retro." }
+    element:"Ritueel Afro-psych + fuzz + percussie", desc:"Modern maar rauw/vuil — géén nette retro." },
+
+  // ---------- Live vondsten (Discogs API-geverifieerd) ----------
+  { id:"r-20260830-1", cat:"C", artist:"Les McCann & Eddie Harris", title:"Swiss Movement", year:1969, country:"US",
+    tracks:["Compared to What","Cold Duck Time","You Got It in Your Soulness"], pLo:1, pHi:8,
+    element:"Soul-jazz met Rhodes + live-groove (Compared to What)", desc:"Bak-goud: 35 exemplaren, spotgoedkoop.",
+    source:"Discogs", url:"https://www.discogs.com/sell/release/5497886?sort=price&sort_order=asc",
+    askPrice:0.99, numForSale:35, found:"2026-08-30" },
+  { id:"r-20260830-2", cat:"C", artist:"Barrabas", title:"Wild Safari", year:1972, country:"Spanje", wildcard:true,
+    tracks:["Wild Safari","Woman","Move"], pLo:12, pHi:20,
+    element:"Spaanse funk-rock, percussie + wah-groove", desc:"Onverwacht groovy; 🃏 wildcard onder de €15.",
+    source:"Discogs", url:"https://www.discogs.com/sell/release/1269681?sort=price&sort_order=asc",
+    askPrice:14.87, numForSale:23, found:"2026-08-30" }
 ];
