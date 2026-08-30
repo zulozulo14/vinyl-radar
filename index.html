@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vinyl Radar</title>
+<style>
+  :root{
+    --bg:#1a1512; --panel:#241d18; --panel2:#2e2620; --line:#3a2f27;
+    --cream:#f6ead9; --muted:#b09a86; --orange:#ff6900; --orange2:#ff8a3d;
+    --a:#e0b64a; --b:#c46b52; --c:#6fae8f;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--cream);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;line-height:1.45}
+  a{color:inherit}
+  header{padding:26px 22px 14px;border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(26,21,18,.96);backdrop-filter:blur(6px);z-index:5}
+  h1{font-family:Georgia,"Times New Roman",serif;font-size:26px;margin:0;letter-spacing:.3px}
+  h1 .dot{color:var(--orange)}
+  .sub{color:var(--muted);font-size:13px;margin-top:3px}
+  .controls{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:16px}
+  .tabs{display:flex;gap:6px;flex-wrap:wrap}
+  .tab{padding:7px 13px;border-radius:20px;border:1px solid var(--line);background:var(--panel);
+    color:var(--cream);cursor:pointer;font-size:13px;font-weight:600;transition:.15s}
+  .tab:hover{border-color:var(--orange)}
+  .tab.on{background:var(--orange);color:#20160e;border-color:var(--orange)}
+  .tab .n{opacity:.6;font-weight:400;margin-left:5px}
+  input[type=search],select{background:var(--panel);border:1px solid var(--line);color:var(--cream);
+    padding:8px 12px;border-radius:8px;font-size:13px;outline:none}
+  input[type=search]{min-width:190px}
+  input[type=search]:focus,select:focus{border-color:var(--orange)}
+  .toggle{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--muted);cursor:pointer;user-select:none}
+  .toggle input{accent-color:var(--orange)}
+  .price{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--muted)}
+  .price input{width:120px;accent-color:var(--orange)}
+  main{max-width:1200px;margin:0 auto;padding:20px 18px 60px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:15px 16px;
+    display:flex;flex-direction:column;gap:9px;position:relative;transition:.15s}
+  .card:hover{border-color:#54453a}
+  .card.owned{opacity:.5}
+  .card.wish{border-color:var(--orange)}
+  .badges{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+  .badge{font-size:11px;font-weight:700;padding:2px 8px;border-radius:20px;letter-spacing:.3px}
+  .badge.A{background:rgba(224,182,74,.15);color:var(--a);border:1px solid rgba(224,182,74,.35)}
+  .badge.B{background:rgba(196,107,82,.15);color:var(--b);border:1px solid rgba(196,107,82,.35)}
+  .badge.C{background:rgba(111,174,143,.15);color:var(--c);border:1px solid rgba(111,174,143,.35)}
+  .badge.wild{background:rgba(255,105,0,.15);color:var(--orange2);border:1px solid rgba(255,105,0,.4)}
+  .badge.pick{background:rgba(246,234,217,.1);color:var(--cream);border:1px solid var(--line)}
+  .badge.country{background:transparent;color:var(--muted);border:1px solid var(--line);font-weight:500}
+  .title{font-family:Georgia,serif;font-size:17px;line-height:1.25;margin:0}
+  .title .artist{color:var(--cream)}
+  .title .name{color:var(--orange2)}
+  .title .yr{color:var(--muted);font-weight:400;font-size:14px}
+  .element{font-size:13px;color:var(--cream);background:var(--panel2);border-radius:7px;padding:6px 9px;border-left:3px solid var(--orange)}
+  .desc{font-size:12.5px;color:var(--muted);margin:-2px 0 0}
+  .tracks{display:flex;gap:5px;flex-wrap:wrap}
+  .trk{font-size:11px;background:var(--panel2);border:1px solid var(--line);border-radius:6px;padding:3px 7px;color:var(--cream)}
+  .meta{display:flex;flex-wrap:wrap;gap:10px;align-items:center;font-size:12px;color:var(--muted)}
+  .pricev{color:var(--cream);font-weight:700;font-size:14px}
+  .deal{color:var(--c);font-weight:700;font-size:12px}
+  .energy{display:inline-flex;gap:2px;align-items:center}
+  .energy .d{width:7px;height:7px;border-radius:50%;background:var(--line)}
+  .energy .d.on{background:var(--orange)}
+  .crates{display:flex;gap:4px;flex-wrap:wrap}
+  .cr{font-size:10.5px;color:var(--muted);border:1px solid var(--line);border-radius:5px;padding:1px 6px}
+  .actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:2px}
+  .btn{flex:1;min-width:96px;text-align:center;padding:8px 6px;border-radius:8px;font-size:12px;font-weight:700;
+    text-decoration:none;cursor:pointer;border:1px solid var(--line);background:var(--panel2);color:var(--cream);transition:.15s}
+  .btn:hover{border-color:var(--orange)}
+  .btn.dg:hover{background:rgba(255,105,0,.12)}
+  .statusrow{display:flex;gap:7px;margin-top:1px}
+  .sbtn{flex:1;padding:6px;border-radius:7px;font-size:11.5px;font-weight:600;cursor:pointer;
+    border:1px solid var(--line);background:transparent;color:var(--muted);transition:.15s}
+  .sbtn:hover{color:var(--cream);border-color:#54453a}
+  .sbtn.act.wish{background:rgba(255,105,0,.15);color:var(--orange2);border-color:var(--orange)}
+  .sbtn.act.own{background:rgba(111,174,143,.15);color:var(--c);border-color:var(--c)}
+  .empty{color:var(--muted);text-align:center;padding:60px 20px;font-size:14px}
+  .count{color:var(--muted);font-size:12px;margin:2px 0 14px}
+  footer{color:var(--muted);font-size:12px;text-align:center;padding:20px;border-top:1px solid var(--line)}
+</style>
+</head>
+<body>
+<header>
+  <h1>Vinyl Radar<span class="dot">.</span></h1>
+  <div class="sub">Funk · soul · cosmic · dub · psych · heavy — koopjes & aanraders op jouw smaak</div>
+  <div class="controls">
+    <div class="tabs" id="tabs"></div>
+    <input type="search" id="q" placeholder="Zoek artiest / titel / track…">
+    <select id="crate">
+      <option value="">Alle bakken (A)</option>
+      <option value="1">1 · cosmic groove</option>
+      <option value="2">2 · reggae/dub</option>
+      <option value="3">3 · laidback hiphop</option>
+      <option value="4">4 · world/Afro/Latin</option>
+      <option value="5">5 · funky soul/jazz-funk</option>
+      <option value="6">6 · disco/funk/party</option>
+    </select>
+    <select id="sort">
+      <option value="cat">Sorteer: categorie</option>
+      <option value="pricelow">Prijs ↑</option>
+      <option value="pricehigh">Prijs ↓</option>
+      <option value="artist">Artiest A–Z</option>
+      <option value="year">Jaar ↑</option>
+    </select>
+    <label class="price">≤ €<span id="pmaxv">40</span>
+      <input type="range" id="pmax" min="5" max="40" value="40" step="1"></label>
+    <label class="toggle"><input type="checkbox" id="wild"> alleen 🃏 wildcards</label>
+    <label class="toggle"><input type="checkbox" id="hideown" checked> verberg 'gehad'</label>
+  </div>
+</header>
+<main>
+  <div class="count" id="count"></div>
+  <div class="grid" id="grid"></div>
+  <div class="empty" id="empty" style="display:none">Niets gevonden met deze filters.</div>
+</main>
+<footer>Data uit <code>data.js</code> · status bewaard in je browser · de radar-agent voegt hier nieuwe koopjes toe</footer>
+
+<script src="data.js"></script>
+<script>
+const CRATES={1:"cosmic groove",2:"reggae/dub",3:"laidback hiphop",4:"world/Afro/Latin",5:"funky soul/jazz-funk",6:"disco/funk/party"};
+const CATNAME={A:"DJ / wijnbar",B:"Thuis luisteren",C:"Crate-digging"};
+const data=(window.VINYL_DATA||[]).map(d=>({...d}));
+const store=JSON.parse(localStorage.getItem("vinylRadarStatus")||"{}");
+const saveStore=()=>localStorage.setItem("vinylRadarStatus",JSON.stringify(store));
+
+const state={cat:"all",q:"",crate:"",sort:"cat",pmax:40,wild:false,hideown:true};
+
+// tabs
+const tabsEl=document.getElementById("tabs");
+const cats=[["all","Alles"],["A","A · DJ"],["B","B · Thuis"],["C","C · Crate"],["wish","♥ Wishlist"]];
+cats.forEach(([k,label])=>{
+  const b=document.createElement("button");b.className="tab"+(k==="all"?" on":"");b.dataset.k=k;
+  b.innerHTML=label+' <span class="n" data-n="'+k+'"></span>';
+  b.onclick=()=>{state.cat=k;[...tabsEl.children].forEach(c=>c.classList.toggle("on",c.dataset.k===k));render()};
+  tabsEl.appendChild(b);
+});
+
+document.getElementById("q").oninput=e=>{state.q=e.target.value.toLowerCase();render()};
+document.getElementById("crate").onchange=e=>{state.crate=e.target.value;render()};
+document.getElementById("sort").onchange=e=>{state.sort=e.target.value;render()};
+document.getElementById("wild").onchange=e=>{state.wild=e.target.checked;render()};
+document.getElementById("hideown").onchange=e=>{state.hideown=e.target.checked;render()};
+document.getElementById("pmax").oninput=e=>{state.pmax=+e.target.value;
+  document.getElementById("pmaxv").textContent=state.pmax>=40?"40+":state.pmax;render()};
+
+function searchUrl(kind,d){
+  const q=encodeURIComponent(d.artist+" "+d.title);
+  return kind==="dg"
+    ? "https://www.discogs.com/search/?q="+q+"&type=release&format_exact=Vinyl"
+    : "https://www.marktplaats.nl/q/"+q+"/";
+}
+function statusOf(id){return store[id]||"none"}
+function setStatus(id,s){ if(store[id]===s) delete store[id]; else store[id]=s; saveStore(); render(); }
+
+function match(d){
+  const st=statusOf(d.id);
+  if(state.cat==="wish"){ if(st!=="wish") return false; }
+  else if(state.cat!=="all" && d.cat!==state.cat) return false;
+  if(state.hideown && st==="own" && state.cat!=="wish") return false;
+  if(state.wild && !d.wildcard) return false;
+  if(state.crate){ if(d.cat!=="A" || !(d.crate||[]).includes(+state.crate)) return false; }
+  if(state.pmax<40 && d.pLo>state.pmax) return false;
+  if(state.q){
+    const hay=(d.artist+" "+d.title+" "+(d.tracks||[]).join(" ")+" "+(d.element||"")+" "+(d.country||"")).toLowerCase();
+    if(!hay.includes(state.q)) return false;
+  }
+  return true;
+}
+function sortFn(a,b){
+  switch(state.sort){
+    case "pricelow": return a.pLo-b.pLo || a.pHi-b.pHi;
+    case "pricehigh": return b.pHi-a.pHi || b.pLo-a.pLo;
+    case "artist": return a.artist.localeCompare(b.artist);
+    case "year": return (a.year||9999)-(b.year||9999);
+    default: return a.cat.localeCompare(b.cat) || a.id.localeCompare(b.id,undefined,{numeric:true});
+  }
+}
+
+function card(d){
+  const st=statusOf(d.id);
+  const el=document.createElement("div");
+  el.className="card"+(st==="own"?" owned":"")+(st==="wish"?" wish":"");
+  const energy=d.energy?'<span class="energy" title="energie '+d.energy+'/5">'+
+    [1,2,3,4,5].map(i=>'<span class="d'+(i<=d.energy?" on":"")+'"></span>').join("")+'</span>':"";
+  const crates=(d.crate||[]).map(c=>'<span class="cr">'+c+' · '+CRATES[c]+'</span>').join("");
+  el.innerHTML=`
+    <div class="badges">
+      <span class="badge ${d.cat}">${d.cat} · ${CATNAME[d.cat]}</span>
+      ${d.wildcard?'<span class="badge wild">🃏 wildcard</span>':""}
+      ${d.pick?'<span class="badge pick">🎯 top-pick</span>':""}
+      ${d.sublane?'<span class="badge country">'+d.sublane+'</span>':""}
+      ${d.country?'<span class="badge country">'+d.country+'</span>':""}
+    </div>
+    <p class="title"><span class="artist">${d.artist}</span> — <span class="name">${d.title}</span> <span class="yr">(${d.year||"—"})</span></p>
+    <div class="element">${d.element||""}</div>
+    ${d.desc?'<p class="desc">'+d.desc+'</p>':""}
+    <div class="tracks">${(d.tracks||[]).map(t=>'<span class="trk">'+t+'</span>').join("")}</div>
+    <div class="meta">
+      <span class="pricev">${d.askPrice?('€'+d.askPrice):('€'+d.pLo+'–'+d.pHi)}</span>
+      ${d.median?'<span class="deal">mediaan €'+d.median+(d.askPrice&&d.askPrice<d.median?' · -'+Math.round((1-d.askPrice/d.median)*100)+'%':'')+'</span>':""}
+      ${energy}
+    </div>
+    ${(d.source||d.seller||d.cond)?'<div class="meta">'+[d.source?'<span>📦 '+d.source+'</span>':'',d.cond?'<span>'+d.cond+'</span>':'',d.seller?'<span>'+d.seller+'</span>':''].filter(Boolean).join('')+'</div>':""}
+    ${crates?'<div class="crates">'+crates+'</div>':""}
+    <div class="actions">
+      ${d.url?'<a class="btn dg" href="'+d.url+'" target="_blank" rel="noopener">Listing ↗</a>':""}
+      <a class="btn dg" href="${searchUrl("dg",d)}" target="_blank" rel="noopener">Discogs ↗</a>
+      <a class="btn" href="${searchUrl("mp",d)}" target="_blank" rel="noopener">Marktplaats ↗</a>
+    </div>
+    <div class="statusrow">
+      <button class="sbtn wish${st==="wish"?" act":""}" data-s="wish">${st==="wish"?"♥ Wishlist":"♡ Wishlist"}</button>
+      <button class="sbtn own${st==="own"?" act":""}" data-s="own">${st==="own"?"✓ Gehad":"Gehad"}</button>
+    </div>`;
+  el.querySelectorAll(".sbtn").forEach(b=>b.onclick=()=>setStatus(d.id,b.dataset.s));
+  return el;
+}
+
+function render(){
+  const grid=document.getElementById("grid");
+  const list=data.filter(match).sort(sortFn);
+  grid.innerHTML="";
+  list.forEach(d=>grid.appendChild(card(d)));
+  document.getElementById("empty").style.display=list.length?"none":"block";
+  document.getElementById("count").textContent=list.length+" platen"+
+    (state.cat==="wish"?" op je wishlist":"");
+  // tab counts
+  const wishN=data.filter(d=>statusOf(d.id)==="wish").length;
+  cats.forEach(([k])=>{
+    const n=tabsEl.querySelector('[data-n="'+k+'"]');if(!n)return;
+    if(k==="all")n.textContent=data.length;
+    else if(k==="wish")n.textContent=wishN||"";
+    else n.textContent=data.filter(d=>d.cat===k).length;
+  });
+}
+render();
+</script>
+</body>
+</html>

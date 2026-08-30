@@ -1,0 +1,934 @@
+[
+{
+"artist": "Joe Jackson",
+"title": "I'm The Man"
+},
+{
+"artist": "The Police",
+"title": "Outlandos D'Amour"
+},
+{
+"artist": "Supertramp",
+"title": "Breakfast In America"
+},
+{
+"artist": "Gerry Rafferty And Joe Egan",
+"title": "Stuck In The Middle With You (The Best Of Stealers Wheel)"
+},
+{
+"artist": "AC/DC",
+"title": "The Razors Edge"
+},
+{
+"artist": "The Beatles",
+"title": "1962-1966"
+},
+{
+"artist": "The Beatles",
+"title": "1967-1970"
+},
+{
+"artist": "The Beatles",
+"title": "Abbey Road"
+},
+{
+"artist": "Creedence Clearwater Revival",
+"title": "The Complete Hit-Album"
+},
+{
+"artist": "Gruppo Sportivo",
+"title": "10 Mistakes"
+},
+{
+"artist": "Gruppo Sportivo",
+"title": "Back To 78"
+},
+{
+"artist": "Eagles",
+"title": "Hotel California"
+},
+{
+"artist": "Eagles",
+"title": "Their Greatest Hits 1971-1975"
+},
+{
+"artist": "Eagles",
+"title": "The Long Run"
+},
+{
+"artist": "The War On Drugs",
+"title": "A Deeper Understanding"
+},
+{
+"artist": "Crosby, Stills, Nash & Young",
+"title": "Déjà Vu"
+},
+{
+"artist": "Emerson, Lake & Palmer",
+"title": "Works II"
+},
+{
+"artist": "Crosby, Stills, Nash & Young",
+"title": "4 Way Street"
+},
+{
+"artist": "Jan Akkerman & Kaz Lux",
+"title": "Eli"
+},
+{
+"artist": "Art Blakey, Dizzy Gillespie, Al McKibbon, Thelonious Monk, Sonny Stitt, Kai Winding",
+"title": "The Giants Of Jazz"
+},
+{
+"artist": "Led Zeppelin",
+"title": "Led Zeppelin II"
+},
+{
+"artist": "AC/DC",
+"title": "Back In Black"
+},
+{
+"artist": "The War On Drugs",
+"title": "I Don't Live Here Anymore"
+},
+{
+"artist": "John Mayer Trio",
+"title": "Try!"
+},
+{
+"artist": "No Artist",
+"title": "Ajax - Juventus"
+},
+{
+"artist": "Manu Chao",
+"title": "Clandestino"
+},
+{
+"artist": "Oasis",
+"title": "(What's The Story) Morning Glory?"
+},
+{
+"artist": "Metallica",
+"title": "Ride The Lightning"
+},
+{
+"artist": "Metallica",
+"title": "Load"
+},
+{
+"artist": "Metallica",
+"title": "Kill 'Em All"
+},
+{
+"artist": "Metallica",
+"title": "Master Of Puppets"
+},
+{
+"artist": "Metallica",
+"title": "...And Justice For All"
+},
+{
+"artist": "Motörhead",
+"title": "Ace Of Spades"
+},
+{
+"artist": "Black Sabbath",
+"title": "Master Of Reality"
+},
+{
+"artist": "Conway Twitty",
+"title": "Shake It Up Baby"
+},
+{
+"artist": "Frank Sinatra",
+"title": "Frank Sinatra's Greatest"
+},
+{
+"artist": "Pauw",
+"title": "Macrocosm Microcosm"
+},
+{
+"artist": "De Staat",
+"title": "O"
+},
+{
+"artist": "De Staat",
+"title": "Bubble Gum"
+},
+{
+"artist": "La Compagnie Créole",
+"title": "La Machine A Danser"
+},
+{
+"artist": "Donna Summer",
+"title": "The Best Of Live And More"
+},
+{
+"artist": "The Nits",
+"title": "Henk"
+},
+{
+"artist": "Blood, Sweat And Tears",
+"title": "Blood, Sweat And Tears"
+},
+{
+"artist": "Chicago",
+"title": "Chicago V"
+},
+{
+"artist": "Santana",
+"title": "Festivál"
+},
+{
+"artist": "Leonard Cohen",
+"title": "Recent Songs"
+},
+{
+"artist": "Santana",
+"title": "Amigos"
+},
+{
+"artist": "Frank Zappa",
+"title": "Joe's Garage Acts II & III"
+},
+{
+"artist": "Simon & Garfunkel",
+"title": "Simon And Garfunkel's Greatest Hits"
+},
+{
+"artist": "Santana",
+"title": "Santana's Greatest Hits"
+},
+{
+"artist": "Santana",
+"title": "Moonflower"
+},
+{
+"artist": "Dave Brubeck",
+"title": "Take Five"
+},
+{
+"artist": "Chuck Berry",
+"title": "Chuck Berry Greatest Hits"
+},
+{
+"artist": "Blondie",
+"title": "Eat To The Beat"
+},
+{
+"artist": "Nicolas Jaar",
+"title": "Space Is Only Noise"
+},
+{
+"artist": "Discothèque",
+"title": "Intro Disco (Special Disco Version)"
+},
+{
+"artist": "Rubberen Robbie",
+"title": "Rubberen Robbie"
+},
+{
+"artist": "Tol Hansse",
+"title": "Moet Niet Zeuren!"
+},
+{
+"artist": "Carlos Santana & John McLaughlin",
+"title": "Love Devotion Surrender"
+},
+{
+"artist": "Leon Bridges",
+"title": "Coming Home"
+},
+{
+"artist": "Thelonious Monk",
+"title": "Straight, No Chaser"
+},
+{
+"artist": "Blood, Sweat And Tears",
+"title": "Mirror Image"
+},
+{
+"artist": "Bruce Springsteen",
+"title": "Born In The U.S.A."
+},
+{
+"artist": "Miles Davis",
+"title": "Kind Of Blue"
+},
+{
+"artist": "Alice In Chains",
+"title": "Dirt"
+},
+{
+"artist": "Alice In Chains",
+"title": "MTV Unplugged"
+},
+{
+"artist": "Tyler, The Creator",
+"title": "Igor"
+},
+{
+"artist": "De Staat",
+"title": "I_Con"
+},
+{
+"artist": "De Staat",
+"title": "Vinticious Versions"
+},
+{
+"artist": "Guru",
+"title": "Jazzmatazz (Volume 1)"
+},
+{
+"artist": "Eumir Deodato",
+"title": "Prelude"
+},
+{
+"artist": "Curtis Mayfield",
+"title": "Curtis"
+},
+{
+"artist": "The Budos Band",
+"title": "The Budos Band"
+},
+{
+"artist": "The Teskey Brothers",
+"title": "Run Home Slow"
+},
+{
+"artist": "UB40",
+"title": "Live"
+},
+{
+"artist": "UB40",
+"title": "Rat In The Kitchen"
+},
+{
+"artist": "Modest Mussorgsky - Maurice Ravel / Maurice Ravel - Berliner Philharmoniker, Herbert von Karajan",
+"title": "Bilder Einer Ausstellung (Pictures At An Exhibition) / Bolero"
+},
+{
+"artist": "Them Crooked Vultures",
+"title": "Them Crooked Vultures"
+},
+{
+"artist": "The Budos Band",
+"title": "Frontier's Edge"
+},
+{
+"artist": "Tuareg",
+"title": "Avec Les Seigneurs Des Sables - Tassili, Iforas, Hoggar"
+},
+{
+"artist": "Thelonious Monk",
+"title": "Brilliant Corners"
+},
+{
+"artist": "Arctic Monkeys",
+"title": "Live At The Royal Albert Hall"
+},
+{
+"artist": "King Gizzard And The Lizard Wizard",
+"title": "Demos Vols. 1 & 2"
+},
+{
+"artist": "Hermanos Gutiérrez",
+"title": "Sonido Cósmico"
+},
+{
+"artist": "Various",
+"title": "Electrosaurus - 21st Century Heavy Blues, Rare Grooves & Sounds From The Netherlands - Vol.2"
+},
+{
+"artist": "Kyuss",
+"title": "...And The Circus Leaves Town"
+},
+{
+"artist": "Metallica",
+"title": "Metallica"
+},
+{
+"artist": "The Doors",
+"title": "L.A. Woman"
+},
+{
+"artist": "Manitas De Plata",
+"title": "Hommages"
+},
+{
+"artist": "The Shadows",
+"title": "String Of Hits"
+},
+{
+"artist": "Queen",
+"title": "Live Killers"
+},
+{
+"artist": "The Shadows",
+"title": "20 Golden Greats"
+},
+{
+"artist": "Wings",
+"title": "London Town"
+},
+{
+"artist": "Bobby McFerrin",
+"title": "Don't Worry - Be Happy!"
+},
+{
+"artist": "Rage Against The Machine",
+"title": "Rage Against The Machine"
+},
+{
+"artist": "Meat Loaf",
+"title": "Bat Out Of Hell"
+},
+{
+"artist": "Ted Nugent",
+"title": "Great Gonzos - The Best Of"
+},
+{
+"artist": "Lamb Of God",
+"title": "Ashes Of The Wake"
+},
+{
+"artist": "Sade",
+"title": "Diamond Life"
+},
+{
+"artist": "The Jimi Hendrix Experience",
+"title": "Axis: Bold As Love"
+},
+{
+"artist": "Creedence Clearwater Revival",
+"title": "More Creedence Gold"
+},
+{
+"artist": "El Michels Affair",
+"title": "Enter The 37th Chamber"
+},
+{
+"artist": "Tame Impala",
+"title": "Currents"
+},
+{
+"artist": "Limp Bizkit",
+"title": "Significant Other"
+},
+{
+"artist": "Sublime",
+"title": "40oz. To Freedom"
+},
+{
+"artist": "Sublime",
+"title": "Sublime"
+},
+{
+"artist": "Slayer",
+"title": "Reign In Blood"
+},
+{
+"artist": "Mumford & Sons",
+"title": "Babel"
+},
+{
+"artist": "Willy Baranda & His West Indies Music",
+"title": "Ritmo Tropical"
+},
+{
+"artist": "Kikagaku Moyo = Kikagaku Moyo",
+"title": "Masana Temples = マサナ寺院群"
+},
+{
+"artist": "Polo & Pan",
+"title": "Caravelle"
+},
+{
+"artist": "Deep Purple",
+"title": "In Rock"
+},
+{
+"artist": "Pink Floyd",
+"title": "The Dark Side Of The Moon"
+},
+{
+"artist": "Pink Floyd",
+"title": "Ummagumma"
+},
+{
+"artist": "Mildlife",
+"title": "Chorus"
+},
+{
+"artist": "Various",
+"title": "Funk & Soul Instrumentals 1967"
+},
+{
+"artist": "Alt-J",
+"title": "This Is All Yours"
+},
+{
+"artist": "Jurassic 5",
+"title": "Power In Numbers"
+},
+{
+"artist": "Queens Of The Stone Age",
+"title": "Songs For The Deaf"
+},
+{
+"artist": "Various",
+"title": "This Is Island"
+},
+{
+"artist": "Bob Marley & The Wailers",
+"title": "Live!"
+},
+{
+"artist": "Bob Marley & The Wailers",
+"title": "Babylon By Bus"
+},
+{
+"artist": "Tame Impala",
+"title": "The Slow Rush"
+},
+{
+"artist": "The Teskey Brothers With Orchestra Victoria",
+"title": "Live At Hamer Hall"
+},
+{
+"artist": "Electric Light Orchestra",
+"title": "Discovery"
+},
+{
+"artist": "A Tribe Called Quest",
+"title": "The Anthology"
+},
+{
+"artist": "Fela Kuti & Africa 70",
+"title": "Expensive Shit"
+},
+{
+"artist": "Paul Simon",
+"title": "Graceland"
+},
+{
+"artist": "Altın Gün",
+"title": "On"
+},
+{
+"artist": "Creedence Clearwater Revival",
+"title": "Cosmo's Factory"
+},
+{
+"artist": "Run-DMC",
+"title": "Raising Hell"
+},
+{
+"artist": "DeWolff",
+"title": "Thrust"
+},
+{
+"artist": "Queens Of The Stone Age",
+"title": "...Like Clockwork"
+},
+{
+"artist": "Queens Of The Stone Age",
+"title": "Villains"
+},
+{
+"artist": "Queens Of The Stone Age",
+"title": "Alive In The Catacombs"
+},
+{
+"artist": "The Desert Sessions",
+"title": "Desert Sessions Vol. 11 & 12"
+},
+{
+"artist": "Pantera / Alice In Chains",
+"title": "Walk / Them Bones"
+},
+{
+"artist": "Fats Domino",
+"title": "Rock 'n' Roll Forever"
+},
+{
+"artist": "Diana Ross",
+"title": "Ross"
+},
+{
+"artist": "Commodores",
+"title": "Live!"
+},
+{
+"artist": "Marvin Gaye",
+"title": "Let's Get It On"
+},
+{
+"artist": "Stevie Wonder",
+"title": "Hotter Than July"
+},
+{
+"artist": "Lionel Richie",
+"title": "Can't Slow Down"
+},
+{
+"artist": "The Shadows",
+"title": "Rock On With The Shadows"
+},
+{
+"artist": "Eddie Vedder",
+"title": "Into The Wild"
+},
+{
+"artist": "Cuby + Blizzards",
+"title": "Groeten Uit Grollo"
+},
+{
+"artist": "Shuggie Otis",
+"title": "Inspiration Information"
+},
+{
+"artist": "Mad Season",
+"title": "Above"
+},
+{
+"artist": "The Meters",
+"title": "Rejuvenation"
+},
+{
+"artist": "Khruangbin",
+"title": "Con Todo El Mundo"
+},
+{
+"artist": "Notorious B.I.G.",
+"title": "Ready To Die (The Remaster LP)"
+},
+{
+"artist": "The Legs",
+"title": "House Of Horizontal Happiness"
+},
+{
+"artist": "Various",
+"title": "Wake Up You! The Rise And Fall of Nigerian Rock 1972-1977 Vol. 2"
+},
+{
+"artist": "King Gizzard And The Lizard Wizard",
+"title": "Teenage Gizzard"
+},
+{
+"artist": "Count Basie",
+"title": "Jam Session At The Montreux Jazz Festival 1975"
+},
+{
+"artist": "The Beatles",
+"title": "Revolver"
+},
+{
+"artist": "Pink Floyd",
+"title": "The Division Bell"
+},
+{
+"artist": "Idles",
+"title": "Tangk"
+},
+{
+"artist": "Various",
+"title": "Er Is Een Kindeke Geboren"
+},
+{
+"artist": "Cuby + Blizzards",
+"title": "Groeten Uit Grollo / Desolation"
+},
+{
+"artist": "Various",
+"title": "Dutch Pop Giants"
+},
+{
+"artist": "Earth, Wind & Fire",
+"title": "Earth, Wind & Fire"
+},
+{
+"artist": "Balthazar",
+"title": "Thin Walls"
+},
+{
+"artist": "James Brown & The Famous Flames",
+"title": "James Brown's Greatest Hits"
+},
+{
+"artist": "Golden Earring",
+"title": "Superstarshine Vol. 1"
+},
+{
+"artist": "Gruppo Sportivo",
+"title": "Rare Tracks (For Collectors Only)"
+},
+{
+"artist": "The Jimi Hendrix Experience",
+"title": "Electric Ladyland"
+},
+{
+"artist": "Roy Ayers Ubiquity",
+"title": "Everybody Loves The Sunshine"
+},
+{
+"artist": "Steely Dan",
+"title": "Can't Buy A Thrill"
+},
+{
+"artist": "Fink",
+"title": "Wheels Turn Beneath My Feet II"
+},
+{
+"artist": "Rick Astley",
+"title": "Never Gonna Give You Up"
+},
+{
+"artist": "Eurythmics",
+"title": "I Need A Man"
+},
+{
+"artist": "Elvis Presley",
+"title": "Elvis Forever (32 Hits And The Story Of A King)"
+},
+{
+"artist": "Jefferson Airplane",
+"title": "Surrealistic Pillow"
+},
+{
+"artist": "Ennio Morricone",
+"title": "Once Upon A Time In The West (The Original Soundtrack Recording)"
+},
+{
+"artist": "Meco Monardo",
+"title": "Star Wars"
+},
+{
+"artist": "Eurythmics",
+"title": "Sweet Dreams Are Made Of This"
+},
+{
+"artist": "Queens Of The Stone Age",
+"title": "Queens Of The Stone Age"
+},
+{
+"artist": "Mastodon",
+"title": "Leviathan"
+},
+{
+"artist": "DeWolff",
+"title": "Orchards/Lupine"
+},
+{
+"artist": "Dewolff",
+"title": "Grand Southern Electric"
+},
+{
+"artist": "Neil Young",
+"title": "Harvest"
+},
+{
+"artist": "Jimi Hendrix",
+"title": "The Essential Jimi Hendrix (Volume Two)"
+},
+{
+"artist": "Turnstile",
+"title": "Glow On"
+},
+{
+"artist": "Gojira",
+"title": "Magma"
+},
+{
+"artist": "The Rolling Stones",
+"title": "Black And Blue"
+},
+{
+"artist": "Pokey LaFarge",
+"title": "Something In The Water"
+},
+{
+"artist": "Bee Gees",
+"title": "Spirits Having Flown"
+},
+{
+"artist": "Bee Gees",
+"title": "Greatest"
+},
+{
+"artist": "Black Sabbath",
+"title": "Paranoid"
+},
+{
+"artist": "Survivor",
+"title": "Eye Of The Tiger"
+},
+{
+"artist": "The War On Drugs",
+"title": "Lost In The Dream"
+},
+{
+"artist": "J.J. Cale",
+"title": "Naturally"
+},
+{
+"artist": "Talking Heads",
+"title": "Speaking In Tongues"
+},
+{
+"artist": "Madonna",
+"title": "Papa Don't Preach (Extended Version)"
+},
+{
+"artist": "Talking Heads",
+"title": "Remain In Light"
+},
+{
+"artist": "Toontje Lager",
+"title": "Stiekem Dansen"
+},
+{
+"artist": "Bill Withers",
+"title": "His Ultimate Collection"
+},
+{
+"artist": "AIR",
+"title": "Moon Safari"
+},
+{
+"artist": "Yerbouti",
+"title": "Super Bazooka"
+},
+{
+"artist": "Grandmaster Flash / Grandmaster Flash & The Furious Five",
+"title": "The Adventures Of Grandmaster Flash On The Wheels Of Steel / The Birthday Mix"
+},
+{
+"artist": "Sugarhill Gang",
+"title": "Rapper's Delight"
+},
+{
+"artist": "KC & The Sunshine Band",
+"title": "Greatest Hits"
+},
+{
+"artist": "Fat Freddy's Drop",
+"title": "Based On A True Story"
+},
+{
+"artist": "Fat Freddy's Drop",
+"title": "Blackbird"
+},
+{
+"artist": "Fat Freddy's Drop",
+"title": "Bays"
+},
+{
+"artist": "Fat Freddy's Drop",
+"title": "Dr Boondigga & The Big BW"
+},
+{
+"artist": "The Moody Blues",
+"title": "A Question Of Balance"
+},
+{
+"artist": "Tool",
+"title": "Fear Inoculum"
+},
+{
+"artist": "Bob Marley & The Wailers",
+"title": "African Herbsman"
+},
+{
+"artist": "Bob Marley & The Wailers",
+"title": "Three Little Birds"
+},
+{
+"artist": "Money Chicha",
+"title": "Chicha Summit"
+},
+{
+"artist": "Tito Chicoma Y Su Orquesta",
+"title": "Cumbias y Boogaloos"
+},
+{
+"artist": "Dire Straits",
+"title": "Love Over Gold"
+},
+{
+"artist": "Dire Straits",
+"title": "Communiqué"
+},
+{
+"artist": "Dire Straits",
+"title": "Dire Straits"
+},
+{
+"artist": "Pharoah Sanders",
+"title": "Black Unity"
+},
+{
+"artist": "Mike Oldfield",
+"title": "Tubular Bells"
+},
+{
+"artist": "Foals",
+"title": "Everything Not Saved Will Be Lost - Part 1"
+},
+{
+"artist": "Chaka Khan",
+"title": "Naughty"
+},
+{
+"artist": "Van Halen",
+"title": "Van Halen II"
+},
+{
+"artist": "Fleetwood Mac",
+"title": "Rumours"
+},
+{
+"artist": "Foals",
+"title": "Holy Fire"
+},
+{
+"artist": "Jane's Addiction",
+"title": "Ritual De Lo Habitual"
+},
+{
+"artist": "ZZ Top",
+"title": "Eliminator"
+},
+{
+"artist": "Cher",
+"title": "Forever"
+},
+{
+"artist": "Fleetwood Mac",
+"title": "Tusk"
+},
+{
+"artist": "Nightmares On Wax",
+"title": "Smokers Delight"
+},
+{
+"artist": "Nala Sinephro",
+"title": "Space 1.8"
+},
+{
+"artist": "Etta James",
+"title": "At Last!"
+},
+{
+"artist": "Radiohead",
+"title": "Kid A"
+},
+{
+"artist": "Radiohead",
+"title": "OK Computer OKNOTOK 1997 2017"
+},
+{
+"artist": "Tool",
+"title": "Opiate"
+}
+]
