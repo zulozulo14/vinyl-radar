@@ -118,8 +118,8 @@
 </main>
 <footer>Data uit <code>data.js</code> · status bewaard in je browser · de radar-agent voegt hier nieuwe koopjes toe</footer>
 
-<script src="data.js"></script>
 <script>
+function initApp(){
 const CRATES={1:"cosmic groove",2:"reggae/dub",3:"laidback hiphop",4:"world/Afro/Latin",5:"funky soul/jazz-funk",6:"disco/funk/party"};
 const CATNAME={A:"DJ / wijnbar",B:"Thuis luisteren",C:"Crate-digging"};
 const data=(window.VINYL_DATA||[]).map(d=>({...d}));
@@ -242,6 +242,12 @@ function render(){
   });
 }
 render();
+}
+// Laad data.js altijd vers (omzeilt browser-cache), draai daarna de app
+var _s=document.createElement('script');
+_s.src='data.js?t='+Date.now();
+_s.onload=initApp;
+document.head.appendChild(_s);
 </script>
 </body>
 </html>
