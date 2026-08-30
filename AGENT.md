@@ -12,10 +12,15 @@ toevoegen aan `data.js` zodat ze in de webinterface (`index.html`) verschijnen.
    je eigen kennis). Voor elke kandidaat: gebruik de **Discogs API** (token in
    `$DISCOGS_TOKEN`) om release-id, **`lowest_price`** (actuele laagste vraagprijs) en
    **`num_for_sale`** op te halen — zie `## Discogs API` hieronder.
-5. Houd alleen platen met `num_for_sale > 0` en `lowest_price` **binnen budget**:
-   prioriteit **€5–20**, plafond ~€35 (B/heavy-repress mag hoger als uitzonderlijk).
-   Dat is een concreet, koopbaar koopje. Vul optioneel aan met **Marktplaats (NL)** via
-   WebSearch/WebFetch voor lokale advertenties (ophaalprijs onder Discogs-laagste = extra goed).
+5. Reken **inclusief geschatte verzendkosten naar NL**. Het budget geldt op het **TOTAAL**
+   (item + verzending): prioriteit **≤€20 totaal**, plafond **≤€35 totaal**.
+   - Geef **NL/EU-verkopers voorrang** (lage verzending). Waar mogelijk: open de sell-pagina
+     `discogs.com/sell/release/{id}?sort=price&sort_order=asc` (netwerk is open) en lees de
+     échte verzendprijs van de goedkoopste geschikte listing.
+   - Lukt dat niet, schat verzending naar NL: **NL ~€4 · EU ~€7 · UK ~€10 · VS/overig ~€14**.
+   - Zet de schatting in `shipEst`. `askPrice` blijft de kale itemprijs; totaal = askPrice + shipEst.
+   Houd alleen platen met `num_for_sale > 0` en **totaal binnen budget**. Marktplaats (NL,
+   vaak ophalen = €0 verzending) is juist extra goed — `shipEst:0` bij ophalen.
 6. Selecteer **max ~6–10 nieuwe vondsten per run**, verdeeld over A/B/C, ~70% logisch /
    30% wildcard. Kwaliteit boven kwantiteit. Niets onder de lat? Voeg niets toe (prima).
 7. Voeg elke vondst toe aan de array in `data.js` in exact het formaat hieronder.
@@ -51,7 +56,8 @@ API — laat `median` weg tenzij je 'm elders hebt. Toon dus "laagste actuele vr
   wildcard:false, pick:false,
   // koopje-context uit de Discogs API:
   source:"Discogs|Marktplaats", url:"discogs.com/sell/release/{id} of Marktplaats-link",
-  askPrice:0,            // = lowest_price uit de API (of Marktplaats-vraagprijs)
+  askPrice:0,            // = lowest_price uit de API (kale itemprijs, of Marktplaats-vraagprijs)
+  shipEst:0,             // geschatte verzending naar NL (0 bij Marktplaats-ophalen). Totaal = askPrice+shipEst
   median:0,              // optioneel; weglaten mag
   numForSale:0,          // uit de API, geeft schaarste aan
   cond:"", seller:"", found:"YYYY-MM-DD" }
@@ -71,3 +77,26 @@ git config user.name "Vinyl Radar"
 git add -A && git commit -m "radar: $(date +%Y-%m-%d) — nieuwe vondsten" && git push origin main
 ```
 Rapporteer aan het eind kort: hoeveel vondsten (A/B/C) en of de push is gelukt.
+
+## Melding (ntfy) — na afloop van élke run
+Stuur een push naar Lars' telefoon via ntfy. Het topic staat in `$NTFY_TOPIC`
+(niet in de repo). Titel ASCII-only (geen €/emoji); body mag UTF-8 (€ en emoji oké).
+
+Met vondsten (vul N en een korte lijst van de top 3–5 met prijs):
+```bash
+if [ -n "$NTFY_TOPIC" ]; then
+  curl -s \
+    -H "Title: Vinyl Radar: N nieuwe koopjes" \
+    -H "Click: https://zulozulo14.github.io/vinyl-radar/" \
+    -H "Tags: cd,moneybag" \
+    -d "George Duke - Reach for It €0,85 · Sly - Riot €1,72 · Kool & The Gang €6,44 …" \
+    "https://ntfy.sh/$NTFY_TOPIC" >/dev/null
+fi
+```
+Niets gevonden? Stuur dan alsnog een korte melding:
+```bash
+if [ -n "$NTFY_TOPIC" ]; then
+  curl -s -H "Title: Vinyl Radar: geen nieuwe koopjes" -H "Tags: shrug" \
+    -d "Deze run niets onder de lat." "https://ntfy.sh/$NTFY_TOPIC" >/dev/null
+fi
+```

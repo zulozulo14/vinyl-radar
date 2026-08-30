@@ -172,12 +172,12 @@ window.VINYL_DATA = [
     tracks:["Compared to What","Cold Duck Time","You Got It in Your Soulness"], pLo:1, pHi:8,
     element:"Soul-jazz met Rhodes + live-groove (Compared to What)", desc:"Bak-goud: 35 exemplaren, spotgoedkoop.",
     source:"Discogs", url:"https://www.discogs.com/sell/release/5497886?sort=price&sort_order=asc",
-    askPrice:0.99, numForSale:35, found:"2026-08-30" },
+    askPrice:0.99, shipEst:14, numForSale:35, found:"2026-08-30" },
   { id:"r-20260830-2", cat:"C", artist:"Barrabas", title:"Wild Safari", year:1972, country:"Spanje", wildcard:true,
     tracks:["Wild Safari","Woman","Move"], pLo:12, pHi:20,
     element:"Spaanse funk-rock, percussie + wah-groove", desc:"Onverwacht groovy; 🃏 wildcard onder de €15.",
     source:"Discogs", url:"https://www.discogs.com/sell/release/1269681?sort=price&sort_order=asc",
-    askPrice:14.87, numForSale:23, found:"2026-08-30" },
+    askPrice:14.87, shipEst:7, numForSale:23, found:"2026-08-30" },
 
   // ---------- Vondsten 2026-08-30 ronde 2 ----------
   { id:"r-20260830-3", cat:"A", artist:"Herbie Hancock", title:"Head Hunters", year:1973, country:"US",
