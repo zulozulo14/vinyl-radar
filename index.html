@@ -201,7 +201,7 @@ function card(d){
       ${d.median?'<span class="deal">mediaan €'+d.median+(d.askPrice&&d.askPrice<d.median?' · -'+Math.round((1-d.askPrice/d.median)*100)+'%':'')+'</span>':""}
       ${energy}
     </div>
-    ${(d.source||d.seller||d.cond)?'<div class="meta">'+[d.source?'<span>📦 '+d.source+'</span>':'',d.cond?'<span>'+d.cond+'</span>':'',d.seller?'<span>'+d.seller+'</span>':''].filter(Boolean).join('')+'</div>':""}
+    ${(d.source||d.seller||d.cond||d.numForSale)?'<div class="meta">'+[d.source?'<span>📦 '+d.source+'</span>':'',d.numForSale?'<span>'+d.numForSale+' te koop</span>':'',d.cond?'<span>'+d.cond+'</span>':'',d.seller?'<span>'+d.seller+'</span>':''].filter(Boolean).join('')+'</div>':""}
     ${crates?'<div class="crates">'+crates+'</div>':""}
     <div class="actions">
       ${d.url?'<a class="btn dg" href="'+d.url+'" target="_blank" rel="noopener">Listing ↗</a>':""}
