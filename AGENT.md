@@ -25,6 +25,13 @@ toevoegen aan `data.js` zodat ze in de webinterface (`index.html`) verschijnen.
      (losse LP; 2xLP hoger). Zet in `shipEst`. `askPrice` = kale itemprijs; totaal = askPrice + shipEst.
    - **Marktplaats (NL) is juist top** — vaak ophalen = €0 verzending (`shipEst:0`) en geen douane.
    Houd alleen platen met `num_for_sale > 0` en **totaal binnen budget**.
+   - **VERZAMELBESTELLING — koop bij voorkeur bij grote NL-verkopers** met enorme voorraad, zodat
+     meerdere vondsten bij DEZELFDE verkoper vallen en Lars één bestelling kan doen (gecombineerde
+     verzending: ~€4 eerste plaat + ~€1,50 per extra). Vaste NL-mega-verkopers om te checken:
+     **`demonfuzz-records`** (~124k platen, Rotterdam) en **`KillaCutz`** (~20k). Check hun voorraad
+     via de sell-pagina gefilterd op verkoper, of hun store. Vul bij elke vondst **`seller`** (Discogs-
+     username) en **`sellerUrl`** (link naar hun store, bijv. `https://www.discogs.com/seller/demonfuzz-records/profile`)
+     in, zodat de interface per verkoper kan groeperen. Meerdere vondsten bij demonfuzz/KillaCutz = ideaal.
 6. Selecteer **max ~6–10 nieuwe vondsten per run**, verdeeld over A/B/C, ~70% logisch /
    30% wildcard. Kwaliteit boven kwantiteit. Niets onder de lat? Voeg niets toe (prima).
 7. Voeg elke vondst toe aan de array in `data.js` in exact het formaat hieronder.
@@ -64,7 +71,9 @@ API — laat `median` weg tenzij je 'm elders hebt. Toon dus "laagste actuele vr
   shipEst:0,             // geschatte verzending naar NL (0 bij Marktplaats-ophalen). Totaal = askPrice+shipEst
   median:0,              // optioneel; weglaten mag
   numForSale:0,          // uit de API, geeft schaarste aan
-  cond:"", seller:"", found:"YYYY-MM-DD" }
+  cond:"", found:"YYYY-MM-DD",
+  seller:"",             // Discogs-username van de verkoper (voor groeperen/verzamelbestelling)
+  sellerUrl:"" }         // link naar de store, bijv. https://www.discogs.com/seller/demonfuzz-records/profile
 ```
 - `id` uniek, met datum. Houd bestaande seed-records ongemoeid; alleen toevoegen.
 - Valideer dat `data.js` geldige JS blijft (array niet breken).

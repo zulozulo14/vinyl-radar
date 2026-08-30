@@ -60,6 +60,14 @@
   .pricev{color:var(--cream);font-weight:700;font-size:14px}
   .deal{color:var(--c);font-weight:700;font-size:12px}
   .ship{color:var(--muted);font-size:12px}
+  .sellers-bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:12px;font-size:12.5px;color:var(--muted)}
+  .sellers-bar a{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:5px 11px;
+    text-decoration:none;color:var(--cream);font-weight:600;transition:.15s}
+  .sellers-bar a:hover{border-color:var(--orange);background:rgba(255,105,0,.1)}
+  .sellerhead{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;
+    background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:11px 15px;margin:14px 0 2px}
+  .sellerhead .basket{font-size:13.5px}
+  .sellerhead .tot{color:var(--c);font-weight:700}
   .energy{display:inline-flex;gap:2px;align-items:center}
   .energy .d{width:7px;height:7px;border-radius:50%;background:var(--line)}
   .energy .d.on{background:var(--orange)}
@@ -107,8 +115,16 @@
     <label class="price">≤ €<span id="pmaxv">40</span>
       <input type="range" id="pmax" min="5" max="40" value="40" step="1"></label>
     <label class="toggle"><input type="checkbox" id="live"> alleen live vondsten 📦</label>
+    <label class="toggle"><input type="checkbox" id="byseller"> 🛒 per verkoper</label>
     <label class="toggle"><input type="checkbox" id="wild"> alleen 🃏 wildcards</label>
     <label class="toggle"><input type="checkbox" id="hideown" checked> verberg 'gehad'</label>
+  </div>
+  <div class="sellers-bar">
+    <span>🛒 Combineer verzending bij NL-mega-verkopers:</span>
+    <a href="https://www.discogs.com/seller/demonfuzz-records/profile?format=Vinyl&genre=Funk+%2F+Soul" target="_blank" rel="noopener">demonfuzz · Funk/Soul ↗</a>
+    <a href="https://www.discogs.com/seller/demonfuzz-records/profile?format=Vinyl&genre=Jazz" target="_blank" rel="noopener">demonfuzz · Jazz ↗</a>
+    <a href="https://www.discogs.com/seller/demonfuzz-records/profile?format=Vinyl&genre=Rock" target="_blank" rel="noopener">demonfuzz · Rock ↗</a>
+    <a href="https://www.discogs.com/seller/KillaCutz/profile?format=Vinyl&genre=Funk+%2F+Soul" target="_blank" rel="noopener">KillaCutz · Funk/Soul ↗</a>
   </div>
 </header>
 <main>
@@ -126,7 +142,9 @@ const data=(window.VINYL_DATA||[]).map(d=>({...d}));
 const store=JSON.parse(localStorage.getItem("vinylRadarStatus")||"{}");
 const saveStore=()=>localStorage.setItem("vinylRadarStatus",JSON.stringify(store));
 
-const state={cat:"all",q:"",crate:"",sort:"cat",pmax:40,wild:false,live:false,hideown:true};
+const state={cat:"all",q:"",crate:"",sort:"cat",pmax:40,wild:false,live:false,bySeller:false,hideown:true};
+// NL gecombineerde verzending: ~€4 eerste plaat + ~€1,50 per extra
+function basketShip(n){ return n<=0?0 : 4 + 1.5*(n-1); }
 
 // tabs
 const tabsEl=document.getElementById("tabs");
@@ -143,6 +161,7 @@ document.getElementById("crate").onchange=e=>{state.crate=e.target.value;render(
 document.getElementById("sort").onchange=e=>{state.sort=e.target.value;render()};
 document.getElementById("wild").onchange=e=>{state.wild=e.target.checked;render()};
 document.getElementById("live").onchange=e=>{state.live=e.target.checked;render()};
+document.getElementById("byseller").onchange=e=>{state.bySeller=e.target.checked;render()};
 document.getElementById("hideown").onchange=e=>{state.hideown=e.target.checked;render()};
 document.getElementById("pmax").oninput=e=>{state.pmax=+e.target.value;
   document.getElementById("pmaxv").textContent=state.pmax>=40?"40+":state.pmax;render()};
@@ -165,7 +184,7 @@ function match(d){
   else if(state.cat!=="all" && d.cat!==state.cat) return false;
   if(state.hideown && st==="own" && state.cat!=="wish") return false;
   if(state.wild && !d.wildcard) return false;
-  if(state.live && !d.found) return false;
+  if((state.live||state.bySeller) && !d.found) return false;
   if(state.crate){ if(d.cat!=="A" || !(d.crate||[]).includes(+state.crate)) return false; }
   if(state.pmax<40 && effPrice(d)>state.pmax) return false;
   if(state.q){
@@ -229,7 +248,27 @@ function render(){
   const grid=document.getElementById("grid");
   const list=data.filter(match).sort(sortFn);
   grid.innerHTML="";
-  list.forEach(d=>grid.appendChild(card(d)));
+  if(state.bySeller){
+    const groups={};
+    list.forEach(d=>{const k=d.seller||"__none";(groups[k]=groups[k]||[]).push(d);});
+    Object.entries(groups).sort((a,b)=>{
+      if(a[0]==="__none")return 1; if(b[0]==="__none")return -1; return b[1].length-a[1].length;
+    }).forEach(([seller,items])=>{
+      const isS=seller!=="__none";
+      const sub=items.reduce((s,d)=>s+(d.askPrice||0),0);
+      const ship=isS?basketShip(items.length):0;
+      const hdr=document.createElement("div");hdr.className="sellerhead";
+      hdr.innerHTML=isS
+        ? '<span class="basket">🛒 <b>'+seller+'</b> · '+items.length+' plaat'+(items.length>1?'en':'')+
+          ' · items €'+sub.toFixed(2)+' + ~€'+ship.toFixed(0)+' verz. = <span class="tot">€'+(sub+ship).toFixed(2)+'</span></span>'+
+          (items[0].sellerUrl?'<a class="btn dg" href="'+absUrl(items[0].sellerUrl)+'" target="_blank" rel="noopener" style="flex:0 0 auto;min-width:90px">Store ↗</a>':'')
+        : '<span class="basket"><b>Overige vondsten</b> (verkoper onbekend) · '+items.length+'</span>';
+      grid.appendChild(hdr);
+      items.forEach(d=>grid.appendChild(card(d)));
+    });
+  } else {
+    list.forEach(d=>grid.appendChild(card(d)));
+  }
   document.getElementById("empty").style.display=list.length?"none":"block";
   document.getElementById("count").textContent=list.length+" platen"+
     (state.cat==="wish"?" op je wishlist":"");
