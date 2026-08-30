@@ -234,5 +234,48 @@ window.VINYL_DATA = [
     desc:"Vroegste Minnie Riperton; bizar arrangement dat nergens heen gaat dan precies goed — 🃏 'I Am the Black Gold of the Sun' is later nuyorican-sample-goud.",
     pLo:12, pHi:18, wildcard:true, pick:false,
     source:"Discogs", url:"https://www.discogs.com/sell/release/1534189?sort=price&sort_order=asc",
-    askPrice:12.0, numForSale:22, cond:"", seller:"", found:"2026-08-30" }
+    askPrice:12.0, numForSale:22, cond:"", seller:"", found:"2026-08-30" },
+
+  // ---------- Vondsten 2026-08-30 ronde 3 ----------
+  { id:"r-20260830-11", cat:"A", artist:"Lonnie Liston Smith And The Cosmic Echoes", title:"Visions of a New World", year:1975, country:"US",
+    tracks:["Visions of a New World","A Garden of Peace","Beautiful Woman"], element:"Rhodes-kosmisch + harp + vibrafoon, warme zachte jazz-funk stroom",
+    desc:"Expansions-broertje: even zwevend en hypnotisch, maar minder bekend en een stuk goedkoper.",
+    crate:[1,5], energy:3, pLo:7, pHi:15, wildcard:false, pick:false,
+    source:"Discogs", url:"https://www.discogs.com/sell/release/263035?sort=price&sort_order=asc",
+    askPrice:7.74, shipEst:14, numForSale:34, cond:"", seller:"", found:"2026-08-30" },
+
+  { id:"r-20260830-12", cat:"A", artist:"Cymande", title:"Second Time Round", year:1973, country:"US",
+    tracks:["Dove 2","Fug","Crawshay"], element:"Afro-funk + warme bas + dubby ruimte, dezelfde Cymande-signatuur",
+    desc:"Tweede album: even groovy en vreemd als het debuut, altijd ondergewaardeerd en goedkoper.",
+    crate:[4,5], energy:3, pLo:20, pHi:28, wildcard:false, pick:false,
+    source:"Discogs", url:"https://www.discogs.com/sell/release/29118112?sort=price&sort_order=asc",
+    askPrice:20.20, shipEst:7, numForSale:61, cond:"", seller:"", found:"2026-08-30" },
+
+  { id:"r-20260830-13", cat:"A", artist:"Donald Byrd", title:"Street Lady", year:1973, country:"US",
+    tracks:["Street Lady","Lansana's Priestess","Slum Lord"], element:"Mizell-productie: wah-gitaar + dikke bas + Rhodes, donkere diepe groove",
+    desc:"Donkerder dan Places and Spaces; 'Street Lady' is tien minuten Mizell-funk op zijn rauwst.",
+    crate:[5], energy:4, pLo:7, pHi:14, wildcard:false, pick:false,
+    source:"Discogs", url:"https://www.discogs.com/sell/release/315283?sort=price&sort_order=asc",
+    askPrice:7.74, shipEst:14, numForSale:28, cond:"", seller:"", found:"2026-08-30" },
+
+  { id:"r-20260830-14", cat:"B", artist:"King Buffalo", title:"Dead Star", year:2022, country:"Germany",
+    tracks:["Hebetation","Gorgon","Alpha Aquilae"], element:"Progressieve stoner-riffs + lange kosmische builds + donkere spanning",
+    desc:"King Buffalo op hun donkerst: Tool-meets-Kyuss pacing met krautrock-ademhaling.",
+    sublane:"prog-stoner", pLo:27, pHi:35, wildcard:false, pick:false,
+    source:"Discogs", url:"https://www.discogs.com/sell/release/21871945?sort=price&sort_order=asc",
+    askPrice:27.42, shipEst:7, numForSale:13, cond:"", seller:"", found:"2026-08-30" },
+
+  { id:"r-20260830-15", cat:"C", artist:"Charles Earland", title:"Black Talk!", year:1970, country:"US",
+    tracks:["More Today Than Yesterday","Aquarius","Keem-O-Sabe"], element:"Hammond B3-aanval + losse drums, rollende jazz-funk orgel-groove",
+    desc:"Spotgoedkoop en altijd in de bak; 'Aquarius' is hypnotische orgel-bombast die bouwt en bouwt.",
+    pLo:1, pHi:6, wildcard:false, pick:false,
+    source:"Discogs", url:"https://www.discogs.com/sell/release/1168895?sort=price&sort_order=asc",
+    askPrice:1.71, shipEst:14, numForSale:66, cond:"", seller:"", found:"2026-08-30" },
+
+  { id:"r-20260830-16", cat:"C", artist:"Grover Washington Jr.", title:"Reed Seed", year:1978, country:"US",
+    tracks:["Reed Seed","Body and Soul","I'll Be With You"], element:"Zachte sax-funk + slinky bas + CTI-warmte, R&B-groove",
+    desc:"Goedkoopstebak-goud; 'Reed Seed' is zeven minuten trage saxgroove die nooit verveelt.",
+    pLo:1, pHi:5, wildcard:false, pick:false,
+    source:"Discogs", url:"https://www.discogs.com/sell/release/1694178?sort=price&sort_order=asc",
+    askPrice:1.35, shipEst:14, numForSale:106, cond:"", seller:"", found:"2026-08-30" }
 ];
