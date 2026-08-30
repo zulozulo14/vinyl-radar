@@ -177,5 +177,62 @@ window.VINYL_DATA = [
     tracks:["Wild Safari","Woman","Move"], pLo:12, pHi:20,
     element:"Spaanse funk-rock, percussie + wah-groove", desc:"Onverwacht groovy; 🃏 wildcard onder de €15.",
     source:"Discogs", url:"https://www.discogs.com/sell/release/1269681?sort=price&sort_order=asc",
-    askPrice:14.87, numForSale:23, found:"2026-08-30" }
+    askPrice:14.87, numForSale:23, found:"2026-08-30" },
+
+  // ---------- Vondsten 2026-08-30 ronde 2 ----------
+  { id:"r-20260830-3", cat:"A", artist:"Herbie Hancock", title:"Head Hunters", year:1973, country:"US",
+    tracks:["Chameleon","Watermelon Man","Sly"], element:"Wah-clavinet + elektrische bas + hypnotische funk-groove",
+    desc:"Dé jazz-funk plaat; 'Chameleon' ontvouwt 15 min pure groove.",
+    crate:[5], energy:4, pLo:5, pHi:15, wildcard:false, pick:false,
+    source:"Discogs", url:"https://www.discogs.com/sell/release/31381?sort=price&sort_order=asc",
+    askPrice:5.14, numForSale:43, cond:"", seller:"", found:"2026-08-30" },
+
+  { id:"r-20260830-4", cat:"A", artist:"Kool & The Gang", title:"Wild and Peaceful", year:1973, country:"US",
+    tracks:["Funky Stuff","Jungle Boogie","Hollywood Swinging"], element:"Rauw groepsgeluid, dikke horns + losse funk-drums",
+    desc:"Pre-commercieel Kool: de echte raw funk, voor het peakuur.",
+    crate:[5,6], energy:4, pLo:6, pHi:14, wildcard:false, pick:false,
+    source:"Discogs", url:"https://www.discogs.com/sell/release/3279109?sort=price&sort_order=asc",
+    askPrice:6.44, numForSale:12, cond:"", seller:"", found:"2026-08-30" },
+
+  { id:"r-20260830-5", cat:"A", artist:"The Blackbyrds", title:"Flying Start", year:1974, country:"US",
+    tracks:["Walking in Rhythm","The Baby","Flying Start"], element:"Mizell-productie: Rhodes + sax + warme groove",
+    desc:"Donald Byrd's leerlingen spelen de warmste jazz-funk; 'Walking in Rhythm' is pure headnod.",
+    crate:[5], energy:3, pLo:2, pHi:8, wildcard:false, pick:false,
+    source:"Discogs", url:"https://www.discogs.com/sell/release/839130?sort=price&sort_order=asc",
+    askPrice:2.32, numForSale:35, cond:"", seller:"", found:"2026-08-30" },
+
+  { id:"r-20260830-6", cat:"A", artist:"Sly & The Family Stone", title:"There's a Riot Goin' On", year:1971, country:"US",
+    tracks:["Luv N' Haight","Family Affair","Thank You for Talkin' to Me Africa"], element:"Donkere murky psych-funk, slepende hypnose",
+    desc:"Sly op zijn donkerst: anti-commercieel, bevreemdend, maar onmiskenbaar groovy.",
+    crate:[1], energy:2, pLo:2, pHi:8, wildcard:true, pick:false,
+    source:"Discogs", url:"https://www.discogs.com/sell/release/5431106?sort=price&sort_order=asc",
+    askPrice:1.72, numForSale:31, cond:"", seller:"", found:"2026-08-30" },
+
+  { id:"r-20260830-7", cat:"B", artist:"Radio Moscow", title:"Brain Cycles", year:2009, country:"US",
+    tracks:["Gettin' Better","Ransom","Death of a Dog"], element:"Psych-blues fuzz met echte groove + vuile analoge productie",
+    desc:"Parker Griggs speelt alles zelf; de rauwste authentieke heavy-blues van dit decennium.",
+    sublane:"heavy-blues/retro-psych", pLo:18, pHi:25, wildcard:false, pick:false,
+    source:"Discogs", url:"https://www.discogs.com/sell/release/5169321?sort=price&sort_order=asc",
+    askPrice:18.15, numForSale:22, cond:"", seller:"", found:"2026-08-30" },
+
+  { id:"r-20260830-8", cat:"B", artist:"Alice Coltrane", title:"Journey in Satchidananda", year:1971, country:"US",
+    tracks:["Journey in Satchidananda","Shiva-Loka","Stopover Bombay"], element:"Harp + Pharoah Sanders sax + meditatieve kosmische flow",
+    desc:"Spirituele tegenhanger van je zware kant; Alice op haar meest kosmisch en hypnotisch.",
+    sublane:"spiritual jazz", pLo:25, pHi:35, wildcard:false, pick:false,
+    source:"Discogs", url:"https://www.discogs.com/sell/release/15016343?sort=price&sort_order=asc",
+    askPrice:25.79, numForSale:23, cond:"", seller:"", found:"2026-08-30" },
+
+  { id:"r-20260830-9", cat:"C", artist:"George Duke", title:"Reach for It", year:1977, country:"US",
+    tracks:["Reach for It","Dukey Stick","Searchin'"], element:"Funky synths + dikke bas + dancefloor-energie",
+    desc:"Altijd in de goedkopenbak voor bijna niets — titelnummer en 'Dukey Stick' zijn echte groovers.",
+    pLo:1, pHi:6, wildcard:false, pick:false,
+    source:"Discogs", url:"https://www.discogs.com/sell/release/50494?sort=price&sort_order=asc",
+    askPrice:0.85, numForSale:68, cond:"", seller:"", found:"2026-08-30" },
+
+  { id:"r-20260830-10", cat:"C", artist:"Rotary Connection", title:"Peace", year:1968, country:"US",
+    tracks:["I Am the Black Gold of the Sun","Peace at Least","Turn Me On"], element:"Psychedelische soul-orchestratie + Minnie Riperton stem",
+    desc:"Vroegste Minnie Riperton; bizar arrangement dat nergens heen gaat dan precies goed — 🃏 'I Am the Black Gold of the Sun' is later nuyorican-sample-goud.",
+    pLo:12, pHi:18, wildcard:true, pick:false,
+    source:"Discogs", url:"https://www.discogs.com/sell/release/1534189?sort=price&sort_order=asc",
+    askPrice:12.0, numForSale:22, cond:"", seller:"", found:"2026-08-30" }
 ];
