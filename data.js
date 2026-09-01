@@ -268,5 +268,60 @@ window.VINYL_DATA = [
     element:"Blue Note jazz-funk, organ + Rhodes — 'Mystic Brew' gesampeld door ATCQ",
     desc:"Meest vergeten Mizell-plaat: dromerig, funky, €22 voor de 2022 reissue. 'Wat ís dit?'",
     source:"Discogs", url:"https://www.discogs.com/sell/release/23296742?sort=price&sort_order=asc",
-    askPrice:22.09, shipEst:8, numForSale:64, cond:"", seller:"", sellerUrl:"", found:"2026-08-30" }
+    askPrice:22.09, shipEst:8, numForSale:64, cond:"", seller:"", sellerUrl:"", found:"2026-08-30" },
+
+  // ---------- Run 2026-09-01 — nieuwe vondsten ----------
+  { id:"r-20260901-1", cat:"A", artist:"Fela Kuti & The Africa 70", title:"International Thief Thief (I.T.T.)", year:1980, country:"US",
+    tracks:["I.T.T. (International Thief Thief) (Part 1)","I.T.T. (International Thief Thief) (Part 2)"], crate:[4], energy:4,
+    pLo:12, pHi:25, wildcard:false, pick:false,
+    element:"afrobeat-machine + politiek vuur + koper + ritmische hypnose",
+    desc:"Langste en felste Fela: 12 min Afrobeat-aanklacht, rauw en onontkoombaar.",
+    source:"Discogs", url:"https://www.discogs.com/sell/release/6248681?sort=price&sort_order=asc",
+    askPrice:22.00, shipEst:4, numForSale:52, cond:"Mint (M)", seller:"KillaCutz",
+    sellerUrl:"https://www.discogs.com/seller/KillaCutz/profile", found:"2026-09-01" },
+
+  { id:"r-20260901-2", cat:"A", artist:"Kool & The Gang", title:"Wild and Peaceful", year:1973, country:"Germany",
+    tracks:["Funky Stuff","More Funky Stuff","Jungle Boogie","Heaven At Once"], crate:[5,6], energy:4,
+    pLo:10, pHi:18, wildcard:false, pick:false,
+    element:"rauwe dancefloor-funk, tight groove + blaas",
+    desc:"Funky Stuff en Jungle Boogie op de vroege Kool — vóór de commercialisering.",
+    source:"Discogs", url:"https://www.discogs.com/sell/release/583886?sort=price&sort_order=asc",
+    askPrice:11.63, shipEst:8, numForSale:25, cond:"", seller:"", sellerUrl:"", found:"2026-09-01" },
+
+  { id:"r-20260901-3", cat:"A", artist:"Lonnie Liston Smith", title:"Loveland", year:1978, country:"Europe",
+    tracks:["Sunburst","Journey Into Love","Floating Through Space","Bright Moments"], crate:[1], energy:2,
+    pLo:18, pHi:28, wildcard:false, pick:false,
+    element:"cosmic Rhodes-soul, drijvend en meditatief",
+    desc:"Stiller dan Expansions maar net zo diep — perfecte early-set zweef.",
+    source:"Discogs", url:"https://www.discogs.com/sell/release/1688596?sort=price&sort_order=asc",
+    askPrice:21.50, shipEst:8, numForSale:10, cond:"", seller:"", sellerUrl:"", found:"2026-09-01" },
+
+  { id:"r-20260901-4", cat:"B", artist:"Can", title:"Tago Mago", year:2014, country:"Europe",
+    tracks:["Paperhouse","Mushroom","Oh Yeah","Halleluwah"], sublane:"krautrock/motorisch", pLo:20, pHi:30,
+    wildcard:false, pick:false,
+    element:"motorische hypnose + rituele drums + vrije ruimte",
+    desc:"Future Days' grote broer: langer, rauwer, meer vrije agressie — dé krautrock-plaat.",
+    source:"Discogs", url:"https://www.discogs.com/sell/release/5789703?sort=price&sort_order=asc",
+    askPrice:23.26, shipEst:8, numForSale:61, cond:"", seller:"", sellerUrl:"", found:"2026-09-01" },
+
+  { id:"r-20260901-5", cat:"C", artist:"Harvey Mason", title:"Marching in the Street", year:1975, country:"Netherlands",
+    tracks:["Marching In The Street","Modaji","Hop Scotch","Wild Rice"], pLo:15, pHi:25, wildcard:false, pick:false,
+    element:"Mizell-jazz-funk, strakke drums + Rhodes + zacht koper",
+    desc:"NL-persing: Harvey Mason als sessie-drummer ontketend — droge groove, rijke productie.",
+    source:"Discogs", url:"https://www.discogs.com/sell/release/5059596?sort=price&sort_order=asc",
+    askPrice:18.64, shipEst:4, numForSale:5, cond:"", seller:"", sellerUrl:"", found:"2026-09-01" },
+
+  { id:"r-20260901-6", cat:"C", artist:"Ronnie Laws", title:"Fever", year:1976, country:"UK",
+    tracks:["Let's Keep It Together","Fever","All The Time"], pLo:6, pHi:15, wildcard:false, pick:false,
+    element:"sax-jazz-funk met soul-warmte",
+    desc:"Cheap-bin goud: twee instant-grooves voor €7,50 item op UK-persing.",
+    source:"Discogs", url:"https://www.discogs.com/sell/release/639863?sort=price&sort_order=asc",
+    askPrice:7.50, shipEst:12, numForSale:17, cond:"", seller:"", sellerUrl:"", found:"2026-09-01" },
+
+  { id:"r-20260901-7", cat:"C", artist:"Arthur Verocai", title:"Arthur Verocai", year:2021, country:"UK",
+    tracks:["Caboclo","Pelas Sombras","Sylvia","Presente Grego"], pLo:15, pHi:28, wildcard:true, pick:false,
+    element:"Braziliaanse orkestrale soul, strijkers + samba + psychedelische spanning",
+    desc:"Legendarische lost gem uit 1972: één opname, vergeten 30 jaar — 2021 UK-reissue.",
+    source:"Discogs", url:"https://www.discogs.com/sell/release/21188389?sort=price&sort_order=asc",
+    askPrice:17.20, shipEst:12, numForSale:10, cond:"", seller:"", sellerUrl:"", found:"2026-09-01" }
 ];
