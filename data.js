@@ -323,5 +323,60 @@ window.VINYL_DATA = [
     element:"Braziliaanse orkestrale soul, strijkers + samba + psychedelische spanning",
     desc:"Legendarische lost gem uit 1972: één opname, vergeten 30 jaar — 2021 UK-reissue.",
     source:"Discogs", url:"https://www.discogs.com/sell/release/21188389?sort=price&sort_order=asc",
-    askPrice:17.20, shipEst:12, numForSale:10, cond:"", seller:"", sellerUrl:"", found:"2026-09-01" }
+    askPrice:17.20, shipEst:12, numForSale:10, cond:"", seller:"", sellerUrl:"", found:"2026-09-01" },
+
+  // ---------- Run 2026-09-02 — nieuwe vondsten ----------
+  { id:"r-20260902-1", cat:"A", artist:"The Blackbyrds", title:"Flying Start", year:1974, country:"UK",
+    tracks:["Flying Start","The Mysterious Vibes","Reggie's Dedication","Cornbread"], crate:[5], energy:4,
+    pLo:10, pHi:18, wildcard:false, pick:false,
+    element:"Mizell-jazz-funk, Rhodes + zachte blazers + diepe groove",
+    desc:"Donald Byrd's studenten op Blue Note: hun debuut vol subtiele Mizell-magie en ziel.",
+    source:"Discogs", url:"https://www.discogs.com/sell/release/683698?sort=price&sort_order=asc",
+    askPrice:10.99, shipEst:12, numForSale:23, cond:"", seller:"", sellerUrl:"", found:"2026-09-02" },
+
+  { id:"r-20260902-2", cat:"A", artist:"Orchestra Baobab", title:"Specialist In All Styles", year:2002, country:"Europe",
+    tracks:["Dee Moo Woor","Bul Ma Mbaye","Niaxarell","Gnima"], crate:[4], energy:3,
+    pLo:22, pHi:32, wildcard:true, pick:false,
+    element:"Senegalese Afro-Cubaanse groove, diepe ritmesectie + zwoele sax + wereldsfeer",
+    desc:"Dakar-legends die Cuba en West-Afrika smelten: tijdloos, zweef-groovy — EU-reissue.",
+    source:"Discogs", url:"https://www.discogs.com/sell/release/15970149?sort=price&sort_order=asc",
+    askPrice:23.26, shipEst:8, numForSale:7, cond:"", seller:"", sellerUrl:"", found:"2026-09-02" },
+
+  { id:"r-20260902-3", cat:"B", artist:"King Buffalo", title:"Longing to Be the Mountain", year:2018, country:"Europe",
+    tracks:["Orion","Longing to Be the Mountain","Cosmonaut"], sublane:"stoner/psych", pLo:20, pHi:30,
+    wildcard:false, pick:false,
+    element:"Psych-stoner met weidse builds, hypnotisch riff + kosmische ruimte + dynamiek",
+    desc:"King Buffalo's zwaarste moment: trager, grooviger, voller — Tool-gevoel via de woestijn.",
+    source:"Discogs", url:"https://www.discogs.com/sell/release/12647404?sort=price&sort_order=asc",
+    askPrice:21.43, shipEst:8, numForSale:13, cond:"", seller:"", sellerUrl:"", found:"2026-09-02" },
+
+  { id:"r-20260902-4", cat:"B", artist:"Sly & The Family Stone", title:"There's A Riot Goin' On", year:1971, country:"Europe",
+    tracks:["Luv N' Haight","Family Affair","(You Caught Me) Smilin'"], sublane:"donker-experimenteel", pLo:18, pHi:30,
+    wildcard:true, pick:false,
+    element:"Duistere, verdovende funk + hypnotische herhaling + claustrofobische psychedelica",
+    desc:"Sly's donkerste uur: murky multi-track chaos, 'Family Affair' is de groove die blijft hangen.",
+    source:"Discogs", url:"https://www.discogs.com/sell/release/21308833?sort=price&sort_order=asc",
+    askPrice:20.93, shipEst:8, numForSale:88, cond:"", seller:"", sellerUrl:"", found:"2026-09-02" },
+
+  { id:"r-20260902-5", cat:"C", artist:"The Crusaders", title:"Chain Reaction", year:1975, country:"UK",
+    tracks:["Keep That Same Old Feeling","Don't Let It Get You Down","Dream Merchant"], pLo:5, pHi:12,
+    wildcard:false, pick:false,
+    element:"Jazz-funk, wah-gitaar + saxofoon + Stix Hooper-drums — stoer en groovy",
+    desc:"Cheap-bin goud: Crusaders in topvorm voor €5,81 — Felder's wah-gitaar zit vol karakter.",
+    source:"Discogs", url:"https://www.discogs.com/sell/release/607665?sort=price&sort_order=asc",
+    askPrice:5.81, shipEst:12, numForSale:22, cond:"", seller:"", sellerUrl:"", found:"2026-09-02" },
+
+  { id:"r-20260902-6", cat:"C", artist:"Lonnie Smith", title:"Think!", year:1968, country:"USA & Europe",
+    tracks:["Slouchin'","Move Your Hand","Spinning Wheel"], pLo:12, pHi:20, wildcard:false, pick:false,
+    element:"Hammond-orgel + soul-funk groove — 'Move Your Hand' gesampeld door ATCQ",
+    desc:"Blue Note organ-funk klassieker: dikste Hammond-groove in de goedkope bak — 2019 reissue.",
+    source:"Discogs", url:"https://www.discogs.com/sell/release/13870751?sort=price&sort_order=asc",
+    askPrice:13.76, shipEst:8, numForSale:90, cond:"", seller:"", sellerUrl:"", found:"2026-09-02" },
+
+  { id:"r-20260902-7", cat:"C", artist:"Les McCann & Eddie Harris", title:"Swiss Movement", year:1969, country:"Germany",
+    tracks:["Compared to What","Cold Duck Time","Kathleen's Theme"], pLo:12, pHi:22, wildcard:false, pick:false,
+    element:"Live soul-jazz + politieke groove — piano + tenor-sax in perfect samenspel",
+    desc:"'Compared to What' is één van de beste live-grooves ooit; German press voor €13 is koopje.",
+    source:"Discogs", url:"https://www.discogs.com/sell/release/11601911?sort=price&sort_order=asc",
+    askPrice:13.48, shipEst:8, numForSale:28, cond:"", seller:"", sellerUrl:"", found:"2026-09-02" }
 ];
