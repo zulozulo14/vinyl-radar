@@ -441,5 +441,67 @@ window.VINYL_DATA = [
     element:"Spaanse rock-funk crossover, wah-gitaar + rauwe groove + psychedelische energie",
     desc:"Spain-persing voor €5: 'Woman' is een cult-funky hit — absoluut 'wat is dit?'-moment uit de goedkope bak.",
     source:"Discogs", url:"https://www.discogs.com/sell/release/1245094?sort=price&sort_order=asc",
-    askPrice:5.16, shipEst:8, numForSale:28, cond:"", seller:"", sellerUrl:"", found:"2026-09-05" }
+    askPrice:5.16, shipEst:8, numForSale:28, cond:"", seller:"", sellerUrl:"", found:"2026-09-05" },
+
+  // ---------- Run 2026-09-09 — nieuwe vondsten ----------
+  { id:"r-20260909-1", cat:"A", artist:"Roy Ayers Ubiquity", title:"Lifeline", year:1977, country:"Europe",
+    tracks:["Running Away","Searching","Love from the Sun"], crate:[1,5], energy:3,
+    pLo:12, pHi:22, wildcard:false, pick:false,
+    element:"cosmic groove + vibrafoon + rhodes, zachte soul-funk warmte",
+    desc:"Verzwegen hoogtepunt in de Roy Ayers-catalog: 'Running Away' is pure kosmische headnod-funk. 2017 EU-reissue, 21 ex.",
+    source:"Discogs", url:"https://www.discogs.com/sell/release/11717377?sort=price&sort_order=asc",
+    askPrice:12.89, shipEst:8, numForSale:21, cond:"", seller:"", sellerUrl:"", found:"2026-09-09" },
+
+  { id:"r-20260909-2", cat:"A", artist:"Fela Kuti & Africa 70", title:"Zombie", year:1977, country:"Europe",
+    tracks:["Zombie","Mr. Follow Follow"], crate:[4], energy:4,
+    pLo:15, pHi:28, wildcard:false, pick:false,
+    element:"afrobeat, hypnotische ritmesectie + koper + politiek vuur",
+    desc:"Dé Fela-plaat: 'Zombie' is het perfecte afrobeat-monster — motorisch, meedogenloos, essentieel. 2022 EU-reissue.",
+    source:"Discogs", url:"https://www.discogs.com/sell/release/23354300?sort=price&sort_order=asc",
+    askPrice:19.74, shipEst:8, numForSale:16, cond:"", seller:"", sellerUrl:"", found:"2026-09-09" },
+
+  { id:"r-20260909-3", cat:"A", artist:"Cymande", title:"Second Time Round", year:1973, country:"Europe",
+    tracks:["Anthracite","Willies' Headache","To You"], crate:[4,5], energy:3,
+    pLo:18, pHi:30, wildcard:false, pick:false,
+    element:"Afro-funk + warme groove + ensemble-spel",
+    desc:"Tweede album vlak na het debuut: iets vreemder, net zo groovy — 2023 EU-persing. Perfect naast de eerste Cymande.",
+    source:"Discogs", url:"https://www.discogs.com/sell/release/29118112?sort=price&sort_order=asc",
+    askPrice:20.20, shipEst:8, numForSale:63, cond:"", seller:"", sellerUrl:"", found:"2026-09-09" },
+
+  { id:"r-20260909-4", cat:"B", artist:"Earthless", title:"Black Heaven", year:2018, country:"Germany",
+    tracks:["Volt Rush","Electric Flame","Black Heaven"], sublane:"heavy-psych (instr.)", pLo:18, pHi:30,
+    wildcard:false, pick:false,
+    element:"instrumentale heavy-psych, Hendrix-riffs + rollende groove + opbouwende dynamiek",
+    desc:"Earthless op het hoogtepunt: snellere riffs en grotere dynamische bogen dan From the Ages — Germany 2018.",
+    source:"Discogs", url:"https://www.discogs.com/sell/release/11723186?sort=price&sort_order=asc",
+    askPrice:22.67, shipEst:8, numForSale:14, cond:"", seller:"", sellerUrl:"", found:"2026-09-09" },
+
+  { id:"r-20260909-5", cat:"B", artist:"Baroness", title:"Blue Record", year:2009, country:"USA & Europe",
+    tracks:["Steel That Sleeps The Eye","The Sweetest Curse","Jake Leg"], sublane:"prog-sludge", pLo:22, pHi:35,
+    wildcard:false, pick:false,
+    element:"melodische prog-sludge, kleurrijke riffs + dynamiek + zang",
+    desc:"Baroness' blauwste moment: melodischer dan Red Album maar net zo zwaar — Mastodon-adjacent. 2020 reissue.",
+    source:"Discogs", url:"https://www.discogs.com/sell/release/16075339?sort=price&sort_order=asc",
+    askPrice:26.38, shipEst:8, numForSale:15, cond:"", seller:"", sellerUrl:"", found:"2026-09-09" },
+
+  { id:"r-20260909-6", cat:"C", artist:"Pleasure", title:"Future Now", year:1979, country:"Germany",
+    tracks:["Future Now","Departure","Space Is The Place"], pLo:6, pHi:14, wildcard:false, pick:false,
+    element:"NW-funk, diepe grooves + soul + futuristische textuur",
+    desc:"Portland-funk voor €9: toekomstgerichte 70s soul-funk met diepe bas en kosmische sfeer — ultieme cheap-bin-vondst.",
+    source:"Discogs", url:"https://www.discogs.com/sell/release/1472085?sort=price&sort_order=asc",
+    askPrice:9.30, shipEst:8, numForSale:7, cond:"", seller:"", sellerUrl:"", found:"2026-09-09" },
+
+  { id:"r-20260909-7", cat:"C", artist:"Bobby Womack", title:"Understanding", year:1972, country:"Germany",
+    tracks:["I Can Understand It","Woman's Gotta Have It","Got To Get You Back"], pLo:8, pHi:18, wildcard:false, pick:false,
+    element:"soul-funk, warme stem + diepe bas + soulful arrangement",
+    desc:"German press van Womack's meest groovy album: ruwe soul en 'Woman's Gotta Have It' als geheime vloer-wapen.",
+    source:"Discogs", url:"https://www.discogs.com/sell/release/4803652?sort=price&sort_order=asc",
+    askPrice:12.94, shipEst:8, numForSale:7, cond:"", seller:"", sellerUrl:"", found:"2026-09-09" },
+
+  { id:"r-20260909-8", cat:"C", artist:"Johnny Guitar Watson", title:"A Real Mother For Ya", year:1977, country:"Europe",
+    tracks:["A Real Mother For Ya","The Real Deal","Tarzan"], pLo:4, pHi:12, wildcard:true, pick:false,
+    element:"70s funk-rock crossover, wah-gitaar + groove + swagger",
+    desc:"JGW's funky meesterwerk voor €4.88: 'A Real Mother For Ya' is een cult-klassieker die altijd in de goedkope bak slingert.",
+    source:"Discogs", url:"https://www.discogs.com/sell/release/1308630?sort=price&sort_order=asc",
+    askPrice:4.88, shipEst:8, numForSale:43, cond:"", seller:"", sellerUrl:"", found:"2026-09-09" }
 ];
