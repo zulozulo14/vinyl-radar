@@ -68,6 +68,17 @@ Peruaanse cumbia, Augustus Pablo, Lee Perry/dub, Madlib/Quantic · Daptone-famil
 **Magneet-labels:** Daptone, Now-Again, Vampi Soul, Curtom, CTI, Blue Note (Mizell), Verve/Impulse-reissues,
 Far Out, Strut, Music On Vinyl, History of Soul, Soul Jazz, BBE.
 
+#### ⭐ Sublane binnen A: MYSTIC GROOVE (toegevoegd 11 sep 2026)
+Tag in data.js: `sublane:"mystic groove"`. Noordsterren: **Lonnie Liston Smith – Expansions ·
+Cymande – Dove · Idris Muhammad – Loran's Dance.**
+**Betekent:** groove first · hypnotisch & steady · warm · veel lucht · cosmic/mystic/licht spiritual.
+Rhodes, orgel, warme bas en organische percussie = plus; **gitaar mag nadrukkelijk aanwezig zijn**;
+lange tracks (5–12+ min) extra interessant. Sluit aan op Hermanos Gutiérrez, Khruangbin, Mildlife,
+Yin Yin, The Budos Band.
+**NIET in deze lane:** rechttoe-rechtaan funk · slap-bass/blazers-"funk night" · chaotische
+jazz/fusion · eindeloze solo's · free/spiritual jazz waar de groove verdwijnt. Obscuur zijn is
+geen doel op zich. Nieuwe mystic groove-vondsten krijgen de sublane-tag + de meest logische bak (crate).
+
 ### B — Thuis luisteren (dieper, langer, donkerder, zwaarder, experimenteler)
 Zware/donkere/psych-kant: zwaarte + groove + riffs + psych-spanning + dynamiek + donkere sfeer.
 Geen metal-om-de-metal. **Orbit:** Tool/Mastodon/Gojira/QOTSA/Kyuss/Sabbath/AiC-ader · stoner/desert
