@@ -78,6 +78,12 @@ Yin Yin, The Budos Band.
 **NIET in deze lane:** rechttoe-rechtaan funk · slap-bass/blazers-"funk night" · chaotische
 jazz/fusion · eindeloze solo's · free/spiritual jazz waar de groove verdwijnt. Obscuur zijn is
 geen doel op zich. Nieuwe mystic groove-vondsten krijgen de sublane-tag + de meest logische bak (crate).
+**Braziliaanse as binnen deze lane (toegevoegd 13 sep):** noordster **João Donato – Quem É Quem**.
+Warme MPB-groove: Rhodes, zachte samba-funk, veel lucht. Jaag op: Marcos Valle ('70-'74),
+Dom Salvador e Abolição, Di Melo, Hyldon, Cassiano, Burnier & Cartauds, Trio Mocotó,
+Banda Black Rio, Osmar Milito, Emílio Santiago; Arthur Verocai = premium-uitzondering.
+Let op persing: Braziliaanse originelen zijn vaak collector — Polysom/Mr Bongo/Far Out-reissues
+zijn de betaalbare route.
 
 ### B — Thuis luisteren (dieper, langer, donkerder, zwaarder, experimenteler)
 Zware/donkere/psych-kant: zwaarte + groove + riffs + psych-spanning + dynamiek + donkere sfeer.
