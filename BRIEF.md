@@ -53,6 +53,25 @@ clichébluesrock · generieke metal zonder riff/groove · modern-retro dat te ne
 
 ---
 
+## 🎯 Actieve zoeklijst (toegevoegd 17 sep 2026 — platenbeurs ging niet door, online op jagen)
+Deze titels hebben prioriteit in elke digest zodra ze onder of rond de mediaan opduiken
+(Discogs + Marktplaats; reissues prima, originelen alleen als koopje):
+1. Lonnie Liston Smith — Expansions (≤€25)
+2. Idris Muhammad — Power Of Soul (≤€22)
+3. Alice Coltrane — Journey In Satchidananda (Impulse-reissue, ≤€30)
+4. Cymande — Second Time Round (≤€28) *(debuut in bezit)*
+5. João Donato — Quem É Quem (Polysom/Mr Bongo, ≤€32)
+6. Marcos Valle — Previsão Do Tempo (≤€30)
+7. Donald Byrd — Places And Spaces (≤€27)
+8. Bobbi Humphrey — Blacks And Blues (≤€27)
+9. Mulatu Astatke — Mulatu Of Ethiopia (Strut, ≤€28)
+10. Shuggie Otis — Inspiration Information (≤€24)
+11. Gil Scott-Heron & Brian Jackson — Winter In America (≤€26)
+Gevonden + gekocht → van deze lijst af (melden in digest). Volledige beurslijst met bak-scan
+en cheap-bin-namen: `beurslijst-2026-09-18.md`.
+
+---
+
 ## Drie categorieën (strikt gescheiden in output)
 
 ### A — DJ / wijnbar (groovy, verrassend, uiteindelijk dansbaar)
